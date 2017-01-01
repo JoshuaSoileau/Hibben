@@ -4,9 +4,54 @@ body {
 li {
   list-style: none; }
 
-nav li {
-  height: 100px; }
-  nav li .align-middle {
-    vertical-align: middle; }
+.navbar {
+  color: white;
+  font-family: 'IM Fell Great Primer', serif; }
+  .navbar li {
+    height: 100px; }
+    .navbar li .align-middle {
+      vertical-align: middle; }
+
+.fullbleed-hero {
+  position: relative; }
+  .fullbleed-hero:after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 56.8%; }
+  .fullbleed-hero .hero-background {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1; }
+  .fullbleed-hero .background-fade {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2; }
+  .fullbleed-hero .border-line {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: none;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    bottom: 15px;
+    right: 25px;
+    z-index: 3; }
+    .fullbleed-hero .border-line:before, .fullbleed-hero .border-line:after {
+      content: "";
+      display: block;
+      float: left;
+      width: 40px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.5); }
+    .fullbleed-hero .border-line:after {
+      float: right; }
 
 /*# sourceMappingURL=hibben.css.map */

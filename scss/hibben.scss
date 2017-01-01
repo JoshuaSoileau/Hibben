@@ -5,11 +5,69 @@ li {
     list-style: none;
 }
 
-nav {
+// Nav Styles
+.navbar {
+    color: white;
+    font-family: 'IM Fell Great Primer', serif;
     li {
         height: 100px;
         .align-middle {
             vertical-align: middle;
+        }
+    }
+}
+
+// Hero Image/Video
+.fullbleed-hero {
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-top: 56.8%; // 16:9 aspect ratio
+    }
+
+    .hero-background {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .background-fade {
+        position: absolute;
+        background: rgba(0,0,0,0.2);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    .border-line {
+        border: 1px solid rgba(255,255,255,0.5);
+        border-top: none;
+        position: absolute;
+        top: 15px;
+        left: 25px;
+        bottom: 15px;
+        right: 25px;
+        z-index: 3;
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            float: left;
+            width: 40px;
+            height: 1px;
+            background: rgba(255,255,255,0.5);
+        }
+        &:after {
+            float: right;
         }
     }
 }
