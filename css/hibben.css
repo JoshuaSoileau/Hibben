@@ -1,4 +1,12 @@
 body {
   background: #efefef; }
 
+li {
+  list-style: none; }
+
+nav li {
+  height: 100px; }
+  nav li .align-middle {
+    vertical-align: middle; }
+
 /*# sourceMappingURL=hibben.css.map */
