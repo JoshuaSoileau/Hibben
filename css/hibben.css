@@ -1,0 +1,24 @@
+.hero {
+  position: relative; }
+  .hero .cover:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; }
+  .hero .cover .cover__content_box {
+    z-index: 5; }
+  .hero .hero-logo {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block; }
+
+.section-title {
+  margin: 20px 0;
+  text-align: center; }
+
+/*# sourceMappingURL=hibben.css.map */
