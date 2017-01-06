@@ -9,7 +9,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0,0,0,0.3);
             z-index: 1;
         }
 
@@ -28,4 +28,13 @@
 .section-title {
     margin: 20px 0;
     text-align: center;
+}
+
+.build {
+    position: relative;
+
+    .about__line {
+        top: 256px;
+        z-index: -1;
+    }
 }

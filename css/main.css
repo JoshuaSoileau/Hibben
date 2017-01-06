@@ -10058,7 +10058,7 @@ input.call_to_action__form__item--08 {
   margin: 0 5.5px 10px; }
 
 .works--01 {
-  background-color: #f6f6f6; }
+  background-color: #f1f1f1; }
 
 .works__item--01 {
   display: inline-block;
@@ -10091,11 +10091,6 @@ input.call_to_action__form__item--08 {
       width: 100%;
       margin: 0 0 15px; } }
 
-.works__item_img--01 {
-  height: 180px; }
-  @media (max-width: 992px) {
-    .works__item_img--01 {
-      height: 140px; } }
 
 .works__item_text_box--01 {
   padding: 33px 20px;
