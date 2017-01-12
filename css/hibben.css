@@ -27,4 +27,41 @@
     top: 256px;
     z-index: -1; }
 
+.header {
+  transition: background 400ms ease; }
+  .header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white; }
+    .header.fixed .header__menu_link--white,
+    .header.fixed .header__menu_link--white:hover,
+    .header.fixed .header__menu_link--white:focus,
+    .header.fixed .header__menu_link--white:active,
+    .header.fixed .header__menu_link--white:visited {
+      color: #858585; }
+    .header.fixed .header__logo_box .logo-gold {
+      opacity: 1; }
+    .header.fixed .header__menu_link--white:before {
+      background: #858585; }
+  .header .header__menu_link--white,
+  .header .header__menu_link--white:hover,
+  .header .header__menu_link--white:focus,
+  .header .header__menu_link--white:active,
+  .header .header__menu_link--white:visited {
+    transition: all 400ms ease; }
+  .header .header__logo_box {
+    position: relative; }
+    .header .header__logo_box .logo-gold {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      opacity: 0;
+      transition: opacity 400ms ease; }
+
+.features__item_icon_circle,
+.button--blue {
+  background: #D8C793; }
+
 /*# sourceMappingURL=hibben.css.map */

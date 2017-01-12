@@ -1,3 +1,6 @@
+$gold: #D8C793;
+$textGray: #858585;
+
 .hero {
     position: relative;
     .cover {
@@ -37,4 +40,48 @@
         top: 256px;
         z-index: -1;
     }
+}
+
+.header {
+    transition: background 400ms ease;
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        .header__menu_link--white,
+        .header__menu_link--white:hover,
+        .header__menu_link--white:focus,
+        .header__menu_link--white:active,
+        .header__menu_link--white:visited {
+            color: $textGray;
+        }
+        .header__logo_box .logo-gold { opacity: 1; }
+        .header__menu_link--white:before { background: $textGray; }
+    }
+    .header__menu_link--white,
+    .header__menu_link--white:hover,
+    .header__menu_link--white:focus,
+    .header__menu_link--white:active,
+    .header__menu_link--white:visited {
+        transition: all 400ms ease;
+    }
+
+    .header__logo_box {
+        position: relative;
+        .logo-gold {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            opacity: 0;
+            transition: opacity 400ms ease;
+        }
+    }
+
+}
+
+.features__item_icon_circle,
+.button--blue {
+    background: $gold;
 }

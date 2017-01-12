@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hibben.css">
     <script src="js/main.js"></script>
+    <script src="js/hibben-custom.js"></script>
 </head>
 <body>
 <main class="page_wrapper">
@@ -17,28 +18,17 @@
         <!-- == START OF HEADER 05 ==-->
         <nav class="header header--05">
             <div class="container header__container">
-                <div class="header__left_box"><a href="#" title="Home" class="header__logo_box"><img src="images/icon.svg" width="30" height="auto" alt="Phoenix UI kit logo" class="header__logo_img"></a></div>
+                <div class="header__left_box"><a href="#" title="Home" class="header__logo_box"><img src="images/icon.svg" width="40" height="auto" alt="Phoenix UI kit logo" class="header__logo_img"><img src="images/icon-gold.svg" width="40" height="auto" alt="Phoenix UI kit logo" class="header__logo_img logo-gold"></a></div>
                 <div class="header__center_box">
                     <ul class="header__menu_list header__item--desktop">
-                        <li class="header__menu_item"><a href="#" class="header__menu_link header__menu_link--white">Locations &amp; Map</a></li>
-                        <li class="header__menu_item"><a href="#" class="header__menu_link header__menu_link--white">Gallery</a></li>
-                        <li class="header__menu_item"><a href="#" class="header__menu_link header__menu_link--white">Build</a></li>
-                        <li class="header__menu_item"><a href="#" class="header__menu_link header__menu_link--white">Listings</a></li>
-                        <li class="header__menu_item"><a href="#" class="header__menu_link header__menu_link--white">Contact</a></li>
+                        <li class="header__menu_item"><a href="#locations-map" class="header__menu_link header__menu_link--white">Locations &amp; Map</a></li>
+                        <li class="header__menu_item"><a href="#gallery" class="header__menu_link header__menu_link--white">Gallery</a></li>
+                        <li class="header__menu_item"><a href="#build" class="header__menu_link header__menu_link--white">Build</a></li>
+                        <li class="header__menu_item"><a href="#listings" class="header__menu_link header__menu_link--white">Listings</a></li>
+                        <li class="header__menu_item"><a href="#contact" class="header__menu_link header__menu_link--white">Contact</a></li>
                     </ul>
                 </div>
                 <div class="header__right_box">
-                    <button data-dropdown-target="location_1" type="button" class="header__location_dropdown_opener js-dropdown-opener">USA</button>
-                    <div data-dropdown-name="location_1" class="header__location_dropdown dropdown js-dropdown">
-                        <ul class="header__location_list dropdown__list">
-                            <li class="dropdown__item header__location_item"><a href="#" class="dropdown__btn header__location_btn"><span class="dropdown__item_text header__location_item_text">USA</span></a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__btn"><span class="dropdown__item_text header__location_item_text">France</span></a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__btn"><span class="dropdown__item_text header__location_item_text">India</span></a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__btn"><span class="dropdown__item_text header__location_item_text">China</span></a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__btn"><span class="dropdown__item_text header__location_item_text">Russia</span></a></li>
-                            <li class="dropdown__item"><a href="#" class="dropdown__btn"><span class="dropdown__item_text header__location_item_text">Japan</span></a></li>
-                        </ul>
-                    </div>
                     <button type="button" data-menu-index="05" class="header__burger_button js-open-menu header__item--mobile"></button>
                 </div>
 
@@ -104,7 +94,7 @@
     <!-- Neighborhood &amp; Custom Gallery -->
 
     <!-- == START OF WORKS 03 ==-->
-    <div class="works works--03">
+    <div class="works works--03" id="gallery">
         <div class="container">
             <div class="works__title_box">
                 <div class="works__title">Gallery</div>
@@ -194,7 +184,7 @@
 
 
     <!-- Listings -->
-    <div class="listings">
+    <div class="listings" id="listings">
         <!-- == START OF WORKS 02 ==-->
         <div class="works works--02 works--01">
             <div class="works__title_box">
@@ -229,7 +219,6 @@
         </div>
     </div>
     <!-- == END OF WORKS 02 ==-->
-
 
 
 
@@ -395,7 +384,7 @@
 
     <!-- Contact -->
     <!-- == START OF contacts 04 ==-->
-    <div class="contacts contacts--04">
+    <div class="contacts contacts--04" id="contact">
         <div class="container contacts__container--04">
             <div class="row">
                 <div class="col-xs-12 col-md-7 contacts_info_column--04">
