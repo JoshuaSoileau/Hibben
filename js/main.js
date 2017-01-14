@@ -1774,7 +1774,7 @@ window.addEventListener('DOMContentLoaded', function (){
 				openers[i].addEventListener('click', function (ev) {
 					ev.preventDefault();
 
-					scrollToTop(this);
+					// scrollToTop(this);
 					var menuIndex = $(this).attr('data-menu-index');
 					var $menu = $('.js-menu[data-menu-index="' + menuIndex + '"]');
 

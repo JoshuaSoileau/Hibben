@@ -40,8 +40,8 @@ jQuery(function($) {
     StickyLinks.prototype = {
 
         init: function (options) {
-            this.header = $('.header').first();
-            this.links = this.header.find('.header__menu_link');
+            this.header = $('.header, .js-menu');
+            this.links = this.header.find('.header__menu_link, .menu__item');
 
             this.initObservers();
         },
