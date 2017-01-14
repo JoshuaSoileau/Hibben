@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hibben.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB9FQU7ORHXjjtNv4CM9onnUFkzyqfjaY" defer></script>
     <script src="js/main.js"></script>
     <script src="js/hibben-custom.js"></script>
 </head>
@@ -70,7 +71,7 @@
     <div class="container locations" id="locations-map">
         <div class="works__title_box">
             <div class="works__title text-center">Locations &amp; Map</div>
-            <div class="works__text"></div>
+            <div class="works__text">Hibben currently includes nearly 150 custom-built homes. Plans are for a total of about 300 houses, along with parks, a pool and a clubhouse. Development of the fifth phase is underway. While all Hibben residents have access to the water through the marshfront trail system and the community docks, the fifth phase will include waterfront homesites – on tree-shaded bluffs above Rat Hall Creek.</div>
         </div>
     </div>
     <!-- == START OF FEATURES 01 ==-->
@@ -79,15 +80,17 @@
             <div class="features__box--01">
                 <div class="features__item features__item--01">
                     <div class="features__item_icon_circle features__item_icon_circle--play-icon"></div>
-                    <h3 class="features__item_title">Interactive Master Plan</h3><span class="features__item_text features__item_text--01">You know what's worse than not working hard? Working hard in the wrong direction.</span>
+                    <h3 class="features__item_title">Interactive Master Plan</h3><span class="features__item_text features__item_text--01">Explore the Phases as you rollover the map to the left and notice all of the interesting things along the way.</span>
                 </div>
                 <div class="features__item features__item--01">
                     <div class="features__item_icon_circle features__item_icon_circle--star-icon"></div>
-                    <h3 class="features__item_title">Charleston Area Map</h3><span class="features__item_text features__item_text--01">Real greatness does not reside inside those who feel large. The truly wise are meek.</span>
+                    <h3 class="features__item_title">Charleston Area Map</h3><span class="features__item_text features__item_text--01">Hibben is located just inside Belle Hall Plantation on Long Point Road, Mount Pleasant. To view a larger map of the Charleston area, <a
+                        href="#">click here</a>.</span>
                 </div>
                 <div class="features__item features__item--01">
                     <div class="features__item_icon_circle features__item_icon_circle--code-icon"></div>
-                    <h3 class="features__item_title">Driving Directions</h3><span class="features__item_text features__item_text--01">All great spirits have always encountered violent opposition from mediocre cool minds.</span>
+                    <h3 class="features__item_title">Driving Directions</h3><span class="features__item_text features__item_text--01">To get to Hibben, turn west from Long Point Road onto the Belle Hall Parkway – the entrance is just across from the cafes, shopping and offices at Belle Hall Shopping Center.<a
+                        href="#">Click here</a> for directions using Google Maps.</span>
                 </div>
             </div>
             <div class="features__content_box--01">
@@ -241,58 +244,49 @@
     <!-- == START OF ABOUT 05 ==-->
     <div class="team team--02 build" id="build">
         <h2 class="team__title">Build</h2>
-        <div class="team__box team__box--02">
-            <div class="about__line"></div>
-            <div class="team__item team__item--02">
-                <div style="background-image:url(img/pictures/pic--musk.jpg)" class="team__item_photo"></div><span class="team__item_name">Elon Musk</span><span class="team__item_job team__item_job--02">CEO</span><span class="team__item_text team__item_text--02">A playful form of issue is the result.</span>
-                <ul class="social">
-                    <li class="social__item social__item--equal_margin"><a href="#" class="social__link social__link--twitter social__link--twitter--black"></a></li>
-                    <li class="social__item social__item--equal_margin"><a href="#" class="social__link social__link--facebook social__link--facebook--black"></a></li>
-                    <li class="social__item social__item--equal_margin"><a href="#" class="social__link social__link--g_plus social__link--g_plus--black"></a></li>
-                </ul>
+        <div class="about about--05">
+            <div class="container">
+                <h2 class="about__title about__title--05">Process and steps<br>of our workflow</h2>
             </div>
-            <div class="team__item team__item--02">
-                <div style="background-image:url(img/pictures/pic--tobias.jpg)" class="team__item_photo"></div><span class="team__item_name">tobias van schneider</span><span class="team__item_job team__item_job--02">Art director</span><span class="team__item_text team__item_text--02">The aspect has issue, but not everyone meets it.</span>
-                <ul class="social">
-                    <li class="social__item social__item--equal_margin"><a href="#" class="social__link social__link--twitter social__link--twitter--black"></a></li>
-                    <li class="social__item social__item--equal_margin"><a href="#" class="social__link social__link--tumblr social__link--tumblr--black"></a></li>
-                    <li class="social__item social__item--equal_margin"><a href="#" class="social__link social__link--pinterest social__link--pinterest--black"></a></li>
-                    <li class="social__item social__item--equal_margin"><a href="#" class="social__link social__link--linkedin social__link--linkedin--black"></a></li>
-                </ul>
+            <div class="about__process_box">
+                <button type="button" data-content-index="process_step_1" class="about__process_item about__process_item--play-icon state-active js-content-trigger">
+                    <h3 class="about__process_title">concept</h3>
+                </button>
+                <button type="button" data-content-index="process_step_2" class="about__process_item about__process_item--star-icon js-content-trigger">
+                    <h3 class="about__process_title">prototyping</h3>
+                </button>
+                <button type="button" data-content-index="process_step_3" class="about__process_item about__process_item--trophy-icon js-content-trigger">
+                    <h3 class="about__process_title">web-design</h3>
+                </button>
+                <button type="button" data-content-index="process_step_4" class="about__process_item about__process_item--code-icon js-content-trigger">
+                    <h3 class="about__process_title">development</h3>
+                </button>
+                <!--decorative element-->
+                <div class="about__line"></div>
             </div>
-            <div class="team__item team__item--02">
-                <div style="background-image:url(img/pictures/pic--doe.jpg)" class="team__item_photo"></div><span class="team__item_name">John Doe</span><span class="team__item_job team__item_job--02">UI/UX designer</span><span class="team__item_text team__item_text--02">Creators, aspects, and honorable doers will always protect them.</span>
-                <ul class="social">
-                    <li class="social__item social__item--equal_margin"><a href="#" class="social__link social__link--twitter social__link--twitter--black"></a></li>
-                    <li class="social__item social__item--equal_margin"><a href="#" class="social__link social__link--facebook social__link--facebook--black"></a></li>
-                </ul>
-            </div>
-            <div class="team__item team__item--02">
-                <div style="background-image:url(img/pictures/pic--ive.png)" class="team__item_photo"></div><span class="team__item_name">Jony Ive</span><span class="team__item_job team__item_job--02">Web designer</span><span class="team__item_text team__item_text--02">The cow has justice, but not everyone fears it.</span>
-                <ul class="social">
-                    <li class="social__item social__item--equal_margin"><a href="#" class="social__link social__link--twitter social__link--twitter--black"></a></li>
-                    <li class="social__item social__item--equal_margin"><a href="#" class="social__link social__link--facebook social__link--facebook--black"></a></li>
-                    <li class="social__item social__item--equal_margin"><a href="#" class="social__link social__link--linkedin social__link--linkedin--black"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row features__row">
-                <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02">
-                    <div class="features__item_icon_circle features__item_icon_circle--02 features__item_icon_circle--play-icon--blue"></div>
-                    <h3 class="features__item_title">ready to use</h3><span class="features__item_text">Phoenix works perfect in all modern browsers (Chrome, Safari, Firefox etc).</span>
+            <!--the first one is visible by default-->
+            <div data-content-index="process_step_1" style="display:block" class="container about__process_text_box js-content-box">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2 col-xs-6"><span class="about__text about__text--05">Our superior mind for freedom is to view others cheerfully. The silence is a synthetic lotus. Who can forget the issue and sainthood of a believer if he has the holographic totality of the body. Paradise is not the unconditional mineral of the doer.</span></div>
+                    <div class="col-lg-4 col-xs-6"><span class="about__text about__text--05">Confucius says: the fraternal moon is appearing, the searious karma is growing. The paradox is a holy moon. Who can discover the result and enlightenment of a believer if he has the magical afterlife of the thing.</span></div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02">
-                    <div class="features__item_icon_circle features__item_icon_circle--02 features__item_icon_circle--trophy-icon--blue"></div>
-                    <h3 class="features__item_title">Clean design</h3><span class="features__item_text">A combination of the unique layout and material design best practices is what the Phoenix loved for.</span>
+            </div>
+            <div data-content-index="process_step_2" class="container about__process_text_box js-content-box">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2 col-xs-6"><span class="about__text about__text--05">Yes, there is upstairs, it dies with suffering. To some, a seeker is an everything for receiving. Over there of samadhi will daily illuminate a mediocre lama. One remarkable milk i give you: respect each other. Not parallel places or nirvana, emerge the booda-hood.</span></div>
+                    <div class="col-lg-4 col-xs-6"><span class="about__text about__text--05">Everything we do is connected with meditation: vision, dimension, density, ascension. Not paradise or meaningless places, realize the harmony. Occur and you will be discovered sincerely. Be soft. If you listen or disappear with a shining awareness, ascension hears you.</span></div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02">
-                    <div class="features__item_icon_circle features__item_icon_circle--02 features__item_icon_circle--code-icon--blue"></div>
-                    <h3 class="features__item_title">bootstrap based</h3><span class="features__item_text">Most popular 1170px grid and all the Bootstrap components are at your service.</span>
+            </div>
+            <div data-content-index="process_step_3" class="container about__process_text_box js-content-box">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2 col-xs-6"><span class="about__text about__text--05">Karmas, bodies, and inner lovers will always protect them. Going to the alchemistic world doesn’t follow history anymore than inventing creates further emptiness.</span></div>
+                    <div class="col-lg-4 col-xs-6"><span class="about__text about__text--05">Always truly synthesise the meaningless ego. Be abstruse. The explosion of the booda-hood has control, but not everyone praises it. When the therapist of stigma develops the lights of the creator, the totality will know lord. The visitor has truth, but not everyone follows it.</span></div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02">
-                    <div class="features__item_icon_circle features__item_icon_circle--02 features__item_icon_circle--star-icon--blue"></div>
-                    <h3 class="features__item_title">unique icons</h3><span class="features__item_text">Phoenix is an SVG based instrument, meaning all icons  are sharp and look awesome everywhere.</span>
+            </div>
+            <div data-content-index="process_step_4" class="container about__process_text_box js-content-box">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2 col-xs-6"><span class="about__text about__text--05">To some, a cow is a stigma for realizing. Be unconditional. Silence, enlightenment and a hermetic mind. The underworld is full of resurrection. To some, a yogi is an art for yearning. One must capture the therapist in order to desire the aspect of hermetic awareness.</span></div>
+                    <div class="col-lg-4 col-xs-6"><span class="about__text about__text--05">Be sincere. The love is a psychic master. To some, a creator is a suffering for believing. I listen and i sit. i convert and i preach. i rise and i balance.</span></div>
                 </div>
             </div>
         </div>
@@ -399,24 +393,72 @@
     <!-- Contact -->
     <!-- == START OF contacts 04 ==-->
     <div class="contacts contacts--04" id="contact">
-        <div class="container contacts__container--04">
-            <div class="row">
-                <div class="col-xs-12 col-md-7 contacts_info_column--04">
-                    <div class="contacts__info--04">
-                        <h2 class="contacts__title contacts__title--04">Contact Us</h2>
-                        <div class="contacts__content--04">
-                            <div class="contacts__item"><span class="contacts__item_text contacts__item_text--04">Belle Hall Pkwy,<br> Mt Pleasant, SC 29464</span></div>
-                            <div class="contacts__item"><a href="mailto:info@hibbenatbellehall.com " target="_blank" class="contacts__item_text contacts__item_text--04">info@hibbenatbellehall.com </a><br><span class="contacts__item_text contacts__item_text--04">843-566-3430</span></div>
+        <div class="contacts contacts--03">
+            <div class="contacts__map_box--03">
+                <div data-zoom="16" data-center-lat="32.8495078" data-center-lng="-79.857537" data-pin-lat="32.8495078" data-pin-lng="-79.8638396" class="contacts__map js-map"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-lg-offset-6 col-md-offset-0">
+                        <div class="contacts__info--03">
+                            <h2 class="contacts__title contacts__title--03">Contacts</h2>
+                            <div class="contacts__content--03">
+                                <div class="contacts__item contacts__item--03">
+                                    <h3 class="contacts__item_title">Office</h3><span class="contacts__item_text">Belle Hall Pkwy,<br> Mt Pleasant, SC 29464</span>
+                                </div>
+                                <div class="contacts__item contacts__item--03">
+                                    <h3 class="contacts__item_title">Phone number</h3><span class="contacts__item_text">+1 843 566 3430</span>
+                                </div>
+                            </div>
+                            <div class="contacts__content--03">
+                                <div class="contacts__item contacts__item--03">
+                                    <h3 class="contacts__item_title">email</h3><span class="contacts__item_text">Adam Churchwell</span><br><a href="mailto:info@hibbenatbellehall.com" target="_blank" class="contacts__item_text">info@hibbenatbellehall.com</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-md-5 contacts__map_box--04">
-                    <div data-zoom="14" data-center-lat="40.7306149" data-center-lng="-73.9897637" data-pin-lat="40.7306149" data-pin-lng="-73.9897637" class="contacts__map js-map"></div>
                 </div>
             </div>
         </div>
     </div>
     <!-- == END OF contacts 04 ==-->
+
+
+
+    <!-- Footer -->
+    <footer class="footer footer--05">
+        <div class="footer__main_box--05">
+            <div class="container footer__container">
+                <div class="footer__left_box--05"><a href="#" class="footer__logo_box footer__logo_box--05"><img src="img/etc/logo--circle--white.svg" class="footer__logo footer__logo--05"><span class="footer__logo_text">Phoenix</span></a><span class="footer__description footer__description--05">Our promise to you is responsive communication and transparency. When you call or e-mail us, we respond right away and explain all clearly.</span></div>
+                <div class="footer__center_box--05">
+                    <ul class="footer__menu footer__menu--05">
+                        <li class="footer__menu__item footer__menu__item--05"><a href="#" class="footer__menu__link">About</a></li>
+                        <li class="footer__menu__item footer__menu__item--05"><a href="#" class="footer__menu__link">Services</a></li>
+                        <li class="footer__menu__item footer__menu__item--05"><a href="#" class="footer__menu__link">Team</a></li>
+                    </ul>
+                    <ul class="footer__menu footer__menu--05">
+                        <li class="footer__menu__item footer__menu__item--05"><a href="#" class="footer__menu__link">Explore</a></li>
+                        <li class="footer__menu__item footer__menu__item--05"><a href="#" class="footer__menu__link">Tour</a></li>
+                        <li class="footer__menu__item footer__menu__item--05"><a href="#" class="footer__menu__link">Pricing</a></li>
+                    </ul>
+                    <ul class="footer__menu footer__menu--05">
+                        <li class="footer__menu__item footer__menu__item--05"><a href="#" class="footer__menu__link">Support</a></li>
+                        <li class="footer__menu__item footer__menu__item--05"><a href="#" class="footer__menu__link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__right_box--05"><span class="footer__social_text--05">Follow us:</span>
+                    <ul class="social footer__social--05 footer__social_box">
+                        <li class="social__item social__item--left_margin"><a href="#" title="Say hello in Twitter!" class="social__link social__link--rounded social__link--twitter"></a></li>
+                        <li class="social__item social__item--left_margin"><a href="#" title="Say hello in Facebook!" class="social__link social__link--rounded social__link--facebook"></a></li>
+                        <li class="social__item social__item--left_margin"><a href="#" title="Say hello in G+!" class="social__link social__link--rounded social__link--g_plus"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__description_box--05">
+            <div class="container footer__container"><span class="footer__copyright footer__copyright--05">© UI-market.com, 2016</span></div>
+        </div>
+    </footer>
 
 </main>
 <div class="js-overlay js-close-navigation js-close-menu overlay"></div>

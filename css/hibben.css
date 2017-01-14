@@ -24,7 +24,6 @@
 .build {
   position: relative; }
   .build .about__line {
-    top: 256px;
     z-index: -1; }
 
 .header {
@@ -71,6 +70,9 @@
 .features__item_icon_circle,
 .button--blue {
   background: #D8C793; }
+  .build .features__item_icon_circle, .build
+  .button--blue {
+    background: transparent; }
 
 .works.resources {
   background: #a5bba7;
@@ -82,9 +84,9 @@
   .works.resources .works__text {
     color: white; }
   .works.resources a {
-    color: #D8C793; }
+    color: #ffe698; }
     .works.resources a:hover {
-      color: #c4aa5b; }
+      color: #ffd34c; }
   .works.resources ul {
     padding: 0;
     margin: 0 0 12px; }

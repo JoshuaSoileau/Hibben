@@ -1,4 +1,5 @@
 $gold: #D8C793;
+$lightGold: #ffedb8;
 $textGray: #858585;
 $darkGreen: #535f54;
 $lightGreen: #a5bba7;
@@ -39,7 +40,6 @@ $lightGreen: #a5bba7;
     position: relative;
 
     .about__line {
-        top: 256px;
         z-index: -1;
     }
 }
@@ -98,6 +98,10 @@ $lightGreen: #a5bba7;
 .features__item_icon_circle,
 .button--blue {
     background: $gold;
+
+    .build & {
+        background: transparent;
+    }
 }
 
 .works.resources {
@@ -109,9 +113,9 @@ $lightGreen: #a5bba7;
     }
     .works__text { color: white; }
     a {
-        color: $gold;
+        color: #ffe698;
         &:hover {
-            color: darken($gold, 15%);
+            color: darken(#ffe698, 15%);
         }
     }
     ul {
