@@ -3,6 +3,16 @@ $lightGold: #ffedb8;
 $textGray: #858585;
 $darkGreen: #535f54;
 $lightGreen: #a5bba7;
+$blue: #82a7cc;
+
+body {
+    color: #797979;
+
+    h1, h2, h3, h4, h5, h6, .works__title {
+        color: $blue;
+
+    }
+}
 
 .hero {
     position: relative;
@@ -92,7 +102,60 @@ $lightGreen: #a5bba7;
             transition: opacity 400ms ease;
         }
     }
+}
 
+
+
+
+.listings {
+    .works__text {
+        display: block;
+        margin: 0 auto;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-size: cover;
+        background-position: center center;
+        a {
+            display: block;
+            position: relative;
+            &:before {
+                content: "";
+                display: block;
+                padding-top: 75%;
+            }
+            &:after {
+                content: "";
+                clear: none;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(100,100,100,.5);
+            }
+            .address {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                display: block;
+                text-align:center;
+                background: rgba(255,255,255,0.6);
+                color: black;
+                z-index: 4;
+                padding: 8px 0;
+            }
+        }
+    }
 }
 
 .features__item_icon_circle,
@@ -111,7 +174,7 @@ $lightGreen: #a5bba7;
         padding-left: 10px;
         padding-right: 10px;
     }
-    .works__text { color: white; }
+    .works__text, .works__title { color: white; }
     a {
         color: #ffe698;
         &:hover {

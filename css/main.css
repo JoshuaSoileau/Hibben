@@ -10041,8 +10041,8 @@ input.call_to_action__form__item--08 {
 
 .works__text {
   font-weight: 300;
-  display: inline-block;
-  max-width: 450px;
+  display: block;
+  max-width: 850px;
   margin: auto;
   font-size: 14px;
   color: #747474; }
