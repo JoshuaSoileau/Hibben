@@ -5,6 +5,24 @@ $darkGreen: #535f54;
 $lightGreen: #a5bba7;
 $blue: #82a7cc;
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translate(-50%, -30%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
 body {
     color: #797979;
 
@@ -116,13 +134,13 @@ body {
         padding: 0;
         margin: 0;
     }
-    li {
+    li.list-item {
         list-style: none;
         padding: 0;
         margin: 0;
         background-size: cover;
         background-position: center center;
-        a {
+        > a {
             display: block;
             position: relative;
             &:before {
@@ -154,6 +172,9 @@ body {
                 z-index: 4;
                 padding: 8px 0;
             }
+        }
+        img {
+            width: 100%;
         }
     }
 }
@@ -203,4 +224,84 @@ body {
 
 .contacts {
     background: $darkGreen;
+}
+
+.list-item {
+    .modal-container {
+        animation: fade-in 500ms ease forwards;
+        display: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 100;
+        background-color: rgba(36, 37, 38, 0.6);
+
+        &.visible {
+            display: block;
+        }
+        .list-modal {
+            animation: slide-up 500ms ease forwards;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 1000px;
+            background: white;
+
+            p {
+                margin-bottom: 5px;
+                padding: 0 10px 0 20px;
+                text-align: left;
+                font-size: 12px;
+                font-weight: 100;
+
+                @media screen and (max-width: 768px) {
+                    margin: 0;
+                }
+
+                &:first-child {
+                    padding-top: 15px;
+                }
+                &:last-of-type {
+                    @media screen and (max-width: 768px) {
+                        padding-bottom: 20px;
+                    }
+                }
+
+                strong {
+                    margin-right: 14px;
+                }
+
+                &.address {
+                    font-size: 28px;
+                    @media screen and (max-width: 768px) {
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width: 550px) {
+                        font-size: 18px;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+
+            .row ~ .row {
+                @media screen and (max-width: 550px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
 }

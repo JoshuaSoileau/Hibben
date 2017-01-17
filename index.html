@@ -9,6 +9,8 @@
     <script src="js/main.js"></script>
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/templating-engine.js"></script>
+    <script src="js/listings.js"></script>
     <script src="js/hibben-custom.js"></script>
 </head>
 <body>
@@ -221,32 +223,8 @@
             <div class="works__title_box">
                 <div class="works__title">Listings</div>
             </div>
-            <ul class="row">
-                <li class="list col-sm-3" style="background-image: url(images/listings/default.jpg);">
-                    <a href="#">
-                        <span class="address">341 Bridgetown Pass</span>
-                    </a>
-                </li>
-                <li class="list col-sm-3" style="background-image: url(images/listings/default.jpg);">
-                    <a href="#">
-                        <span class="address">341 Bridgetown Pass</span>
-                    </a>
-                </li>
-                <li class="list col-sm-3" style="background-image: url(images/listings/default.jpg);">
-                    <a href="#">
-                        <span class="address">341 Bridgetown Pass</span>
-                    </a>
-                </li>
-                <li class="list col-sm-3" style="background-image: url(images/listings/default.jpg);">
-                    <a href="#">
-                        <span class="address">341 Bridgetown Pass</span>
-                    </a>
-                </li>
-                <li class="list col-sm-3" style="background-image: url(images/listings/default.jpg);">
-                    <a href="#">
-                        <span class="address">341 Bridgetown Pass</span>
-                    </a>
-                </li>
+            <ul class="row" id="listing-elements">
+                <!-- Actual listings inserted via JS in listings.js -->
             </ul>
         </div>
     </div>

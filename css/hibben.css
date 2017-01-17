@@ -1,3 +1,13 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes slide-up {
+  0% {
+    transform: translate(-50%, -30%); }
+  100% {
+    transform: translate(-50%, -50%); } }
 body {
   color: #797979; }
   body h1, body h2, body h3, body h4, body h5, body h6, body .works__title {
@@ -78,20 +88,20 @@ body {
 .listings ul {
   padding: 0;
   margin: 0; }
-.listings li {
+.listings li.list-item {
   list-style: none;
   padding: 0;
   margin: 0;
   background-size: cover;
   background-position: center center; }
-  .listings li a {
+  .listings li.list-item > a {
     display: block;
     position: relative; }
-    .listings li a:before {
+    .listings li.list-item > a:before {
       content: "";
       display: block;
       padding-top: 75%; }
-    .listings li a:after {
+    .listings li.list-item > a:after {
       content: "";
       clear: none;
       display: block;
@@ -101,7 +111,7 @@ body {
       width: 100%;
       height: 100%;
       background: rgba(100, 100, 100, 0.5); }
-    .listings li a .address {
+    .listings li.list-item > a .address {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -113,6 +123,8 @@ body {
       color: black;
       z-index: 4;
       padding: 8px 0; }
+  .listings li.list-item img {
+    width: 100%; }
 
 .features__item_icon_circle,
 .button--blue {
@@ -151,5 +163,64 @@ body {
 
 .contacts {
   background: #535f54; }
+
+.list-item .modal-container {
+  animation: fade-in 500ms ease forwards;
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(36, 37, 38, 0.6); }
+  .list-item .modal-container.visible {
+    display: block; }
+  .list-item .modal-container .list-modal {
+    animation: slide-up 500ms ease forwards;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 1000px;
+    background: white; }
+    .list-item .modal-container .list-modal p {
+      margin-bottom: 5px;
+      padding: 0 10px 0 20px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 100; }
+      @media screen and (max-width: 768px) {
+        .list-item .modal-container .list-modal p {
+          margin: 0; } }
+      .list-item .modal-container .list-modal p:first-child {
+        padding-top: 15px; }
+      @media screen and (max-width: 768px) {
+        .list-item .modal-container .list-modal p:last-of-type {
+          padding-bottom: 20px; } }
+      .list-item .modal-container .list-modal p strong {
+        margin-right: 14px; }
+      .list-item .modal-container .list-modal p.address {
+        font-size: 28px; }
+        @media screen and (max-width: 768px) {
+          .list-item .modal-container .list-modal p.address {
+            font-size: 14px; } }
+        @media screen and (max-width: 550px) {
+          .list-item .modal-container .list-modal p.address {
+            font-size: 18px;
+            margin-bottom: 8px; } }
+    @media screen and (max-width: 550px) {
+      .list-item .modal-container .list-modal .row ~ .row {
+        display: none; } }
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0; }
 
 /*# sourceMappingURL=hibben.css.map */
