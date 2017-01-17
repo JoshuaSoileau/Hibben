@@ -125,6 +125,9 @@ body {
       text-shadow: 1px 3px 0px black;
       font-size: 18px;
       font-weight: 100; }
+      @media screen and (max-width: 768px) {
+        .listings li.list-item > a .address {
+          font-size: 14px; } }
       .listings li.list-item > a .address:before {
         content: "";
         display: block;
@@ -133,6 +136,9 @@ body {
         height: 2px;
         background: white;
         box-shadow: 1px 3px 0 black; }
+        @media screen and (max-width: 768px) {
+          .listings li.list-item > a .address:before {
+            display: none; } }
   .listings li.list-item img {
     width: 100%; }
   .listings li.list-item .picture {
@@ -242,5 +248,24 @@ body {
 .footer .footer__main_box--05,
 .footer .footer__description_box--05 {
   background: #3a4856; }
+
+.features__container--01 {
+  position: relative; }
+  .features__container--01:before {
+    content: "Coming Soon";
+    color: white;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3a4856;
+    z-index: 5;
+    opacity: .9;
+    text-align: center;
+    font-weight: 100;
+    font-size: 18px;
+    padding-top: 10%; }
 
 /*# sourceMappingURL=hibben.css.map */
