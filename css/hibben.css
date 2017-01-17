@@ -119,12 +119,28 @@ body {
       height: auto;
       display: block;
       text-align: center;
-      background: rgba(255, 255, 255, 0.6);
-      color: black;
+      color: white;
       z-index: 4;
-      padding: 8px 0; }
+      padding: 0 8px 5%;
+      text-shadow: 1px 3px 0px black;
+      font-size: 18px;
+      font-weight: 100; }
+      .listings li.list-item > a .address:before {
+        content: "";
+        display: block;
+        margin: 0 auto 30px;
+        width: 90px;
+        height: 2px;
+        background: white;
+        box-shadow: 1px 3px 0 black; }
   .listings li.list-item img {
     width: 100%; }
+  .listings li.list-item .picture {
+    background-size: cover; }
+    .listings li.list-item .picture:after {
+      content: "";
+      display: block;
+      padding-top: 65%; }
 
 .features__item_icon_circle,
 .button--blue {
@@ -222,5 +238,9 @@ body {
 .row.no-gutters > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0; }
+
+.footer .footer__main_box--05,
+.footer .footer__description_box--05 {
+  background: #3a4856; }
 
 /*# sourceMappingURL=hibben.css.map */
