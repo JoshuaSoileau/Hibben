@@ -13447,13 +13447,6 @@ input.cover__form__item--13 {
 
 .contacts--04 {
   background-color: #242526; }
-  @media (max-width: 992px) {
-    .contacts--04 {
-      padding-top: 75px; } }
-  @media (max-width: 500px) {
-    .contacts--04 {
-      padding-top: 50px;
-      padding-bottom: 50px; } }
 
 .contacts__container--04 {
   position: relative; }

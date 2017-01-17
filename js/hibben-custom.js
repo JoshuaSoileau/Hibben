@@ -41,7 +41,7 @@ jQuery(function($) {
 
         init: function (options) {
             this.header = $('.header, .js-menu');
-            this.links = this.header.find('.header__menu_link, .menu__item');
+            this.links = this.header.find('.header__menu_link, .menu__item, .menu-item');
 
             this.initObservers();
         },
