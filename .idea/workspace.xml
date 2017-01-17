@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9d88d975-4c67-48db-8ba7-1bc998512661" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4828baa6d35618169aad5f6b1a27a190cb96a44a/hibben.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4828baa6d35618169aad5f6b1a27a190cb96a44a/hibben.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/hibben.css" afterPath="$PROJECT_DIR$/css/hibben.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/hibben.css.map" afterPath="$PROJECT_DIR$/css/hibben.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/hibben.scss" afterPath="$PROJECT_DIR$/scss/hibben.scss" />
     </list>
     <ignored path="hibben.dev.iws" />
@@ -92,8 +89,8 @@
       <file leaf-file-name="hibben.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/hibben.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+            <state relative-caret-position="782">
+              <caret line="184" column="40" lean-forward="false" selection-start-line="184" selection-start-column="40" selection-end-line="184" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -391,12 +388,12 @@
       <workItem from="1484097678251" duration="4197000" />
       <workItem from="1484356103592" duration="9052000" />
       <workItem from="1484609646143" duration="8572000" />
-      <workItem from="1484686949765" duration="356000" />
+      <workItem from="1484686949765" duration="455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49375000" />
+    <option name="totallyTimeSpent" value="49474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -859,8 +856,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/hibben.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+        <state relative-caret-position="782">
+          <caret line="184" column="40" lean-forward="false" selection-start-line="184" selection-start-column="40" selection-end-line="184" selection-end-column="40" />
           <folding />
         </state>
       </provider>
