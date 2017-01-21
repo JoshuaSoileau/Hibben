@@ -1113,7 +1113,10 @@ g,0<c.length&&(c=Aa[c[0]])&&(a.c[e]=c))}a.c[e]||(c=Aa[e])&&(a.c[e]=c);for(c=0;c<
   function Lightbox(options) {
     this.album = [];
     this.currentImageIndex = void 0;
-    this.init();
+    var self = this;
+    $(document).ready(function() {
+        self.init();
+    })
 
     // options
     this.options = $.extend({}, this.constructor.defaults);
