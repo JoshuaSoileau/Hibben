@@ -271,6 +271,9 @@ jQuery(document).ready(function($) {
             } else {
                 if(!button.hasClass('button--black')) this.links.filter('[data-filters="show-all"]').removeClass('button--black');
                 button.toggleClass('button--black');
+                if(!$('#listings .filters .button--black').length) {
+                    $('#listings .filters button[data-filters="show-all"]').addClass('button--black');
+                }
             }
         },
 
