@@ -193,7 +193,7 @@ jQuery(document).ready(function($) {
     var Ul = $('#listing-elements');
     listings.forEach(function(listing) {
         templ = $.htmlTemplate('' +
-            '<li class="list-item col-sm-3 col-xs-6" data-filter="#{filters}" style="background-image: url(#{defaultImage});">' +
+            '<li class="list-item col-sm-3 col-xs-6 #{filters}" style="background-image: url(#{defaultImage});">' +
                 '<a href="#">' + 
                     '<span class="address">#{address}</span>' +
                 '</a>' +
@@ -265,18 +265,18 @@ jQuery(document).ready(function($) {
 
         toggleAppliedStatus: function() {
             var button = $(event.target).is('button') ? $(event.target) : $(event.target).closest('button');
-            if(button.attr('data-filter') == 'show-all') {
+            if(button.attr('data-filters') == 'show-all') {
                 this.links.removeClass('button--black');
                 button.addClass('button--black');
             } else {
-                if(!button.hasClass('button--black')) this.links.filter('[data-filter="show-all"]').removeClass('button--black');
+                if(!button.hasClass('button--black')) this.links.filter('[data-filters="show-all"]').removeClass('button--black');
                 button.toggleClass('button--black');
             }
         },
 
         filterItem: function(event) {
             var target = $(event.target).is('button') ? $(event.target) : $(event.target).closest('button'),
-                newFilter = target.attr('data-filter');
+                newFilter = target.attr('data-filters');
             this.clearSiblingFilters(newFilter);
             if(newFilter == "show-all") {
                 this.clearAllFilters();
@@ -298,15 +298,15 @@ jQuery(document).ready(function($) {
             this.applyFilters();
         },
         clearSiblingFilters: function(filter) {
-            var target = $('#listings .filters button[data-filter="'+filter+'"]'),
+            var target = $('#listings .filters button[data-filters="'+filter+'"]'),
                 siblings = target.closest('li').siblings().find('button'),
                 self = this;
             console.log('Target: '+filter);
             console.log('Siblings:');
             siblings.each(function(index, sibling) {
-                console.log('    '+$(sibling).attr('data-filter'));
+                console.log('    '+$(sibling).attr('data-filters'));
                 $(sibling).removeClass('button--black');
-                self.filters.removeItem($(sibling).attr('data-filter'));
+                self.filters.removeItem($(sibling).attr('data-filters'));
             });
 
         },
