@@ -34,7 +34,7 @@ jQuery(document).ready(function($) {
             '</a>' +
             '<div id="video-'+index+'" class="modal-container">' +
                 '<div class="list-modal video-content">' +
-                    '<video autoplay="true" loop="false" muted="false" preload="auto">' +
+                    '<video autoplay="true" loop="false" controls="true" muted="false" preload="auto">' +
                         '<source src="#{mp4}" type="video/mp4">' +
                         '<source src="#{ogv}" type="video/ogg">' +
                         '<source src="#{webm}" type="video/webm">' +
