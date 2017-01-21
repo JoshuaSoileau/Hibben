@@ -1,6 +1,7 @@
 var listings = [
     {
         address: "529 Country Place Road",
+        filters: "type-home price-100k-250k marsh-front-no",
         type: "Single Family Home",
         bedrooms: 4,
         bathrooms: 2,
@@ -15,6 +16,7 @@ var listings = [
     },
     {
         address: "742 Hibbens Grant Boulevard",
+        filters: "type-home price-100k-250k marsh-front-no",
         type: "Single Family Home",
         bedrooms: 4,
         bathrooms: 2,
@@ -29,6 +31,7 @@ var listings = [
     },
     {
         address: "521 Country Place Road",
+        filters: "type-home price-100k-250k marsh-front-no",
         type: "Homesite",
         bedrooms: 4,
         bathrooms: 2,
@@ -43,6 +46,7 @@ var listings = [
     },
     {
         address: "881 Tupelo Bay Drive ",
+        filters: "type-home price-100k-250k marsh-front-no",
         type: "Single Family Home",
         bedrooms: 4,
         bathrooms: 2,
@@ -57,6 +61,7 @@ var listings = [
     },
     {
         address: "716 Stucco Lane",
+        filters: "type-home price-100k-250k marsh-front-no",
         type: "Single Family Home",
         bedrooms: 4,
         bathrooms: 2,
@@ -71,6 +76,7 @@ var listings = [
     },
     {
         address: "341 Bridgetown Pass",
+        filters: "type-homesite price-100k-250k marsh-front-no",
         type: "Homesite",
         bedrooms: 4,
         bathrooms: 2,
@@ -85,6 +91,7 @@ var listings = [
     },
     {
         address: "353 Bridgetown Pass",
+        filters: "type-homesite price-100k-250k marsh-front-no",
         type: "Homesite",
         bedrooms: 4,
         bathrooms: 2,
@@ -99,6 +106,7 @@ var listings = [
     },
     {
         address: "363 Bridgetown Pass",
+        filters: "type-homesite price-100k-250k marsh-front-no",
         type: "Homesite",
         bedrooms: 4,
         bathrooms: 2,
@@ -113,6 +121,7 @@ var listings = [
     },
     {
         address: "355 Bridgetown Pass",
+        filters: "type-homesite price-100k-250k marsh-front-no",
         type: "Homesite",
         bedrooms: 4,
         bathrooms: 2,
@@ -127,6 +136,7 @@ var listings = [
     },
     {
         address: "359 Bridgetown Pass",
+        filters: "type-homesite price-100k-250k marsh-front-no",
         type: "Homesite",
         bedrooms: 4,
         bathrooms: 2,
@@ -141,6 +151,7 @@ var listings = [
     },
     {
         address: "372 Bridgetown Pass",
+        filters: "type-homesite price-100k-250k marsh-front-no",
         type: "Homesite",
         bedrooms: 4,
         bathrooms: 2,
@@ -155,6 +166,7 @@ var listings = [
     },
     {
         address: "376 Bridgetown Pass",
+        filters: "type-homesite price-100k-250k marsh-front-no",
         type: "Homesite",
         bedrooms: 4,
         bathrooms: 2,
@@ -181,7 +193,7 @@ jQuery(document).ready(function($) {
     var Ul = $('#listing-elements');
     listings.forEach(function(listing) {
         templ = $.htmlTemplate('' +
-            '<li class="list-item col-sm-3 col-xs-6" style="background-image: url(#{defaultImage});">' +
+            '<li class="list-item col-sm-3 col-xs-6" data-filter="#{filters}" style="background-image: url(#{defaultImage});">' +
                 '<a href="#">' + 
                     '<span class="address">#{address}</span>' +
                 '</a>' +
@@ -226,4 +238,93 @@ jQuery(document).ready(function($) {
         if(!$(event.target).is('.modal-container')) return;
         $(event.target).removeClass('visible');
     });
+
+    Array.prototype.removeItem = function(v) { this.splice(this.indexOf(v) == -1 ? this.length : this.indexOf(v), 1); }
+
+    function Filtering(options) {
+        this.init(options);
+    }
+
+    Filtering.prototype = {
+
+        init: function (options) {
+            this.grid = $('#listing-elements').isotope({
+                itemSelector: '.list-item',
+                layoutMode: 'fitRows'
+            });
+            this.links = $('#listings .filters button');
+            this.filters = ["show-all"];
+
+            this.initObservers();
+        },
+
+        initObservers: function() {
+            this.links.click(this.toggleAppliedStatus.bind(this));
+            this.links.click(this.filterItem.bind(this));
+        },
+
+        toggleAppliedStatus: function() {
+            var button = $(event.target).is('button') ? $(event.target) : $(event.target).closest('button');
+            if(button.attr('data-filter') == 'show-all') {
+                this.links.removeClass('button--black');
+                button.addClass('button--black');
+            } else {
+                if(!button.hasClass('button--black')) this.links.filter('[data-filter="show-all"]').removeClass('button--black');
+                button.toggleClass('button--black');
+            }
+        },
+
+        filterItem: function(event) {
+            var target = $(event.target).is('button') ? $(event.target) : $(event.target).closest('button'),
+                newFilter = target.attr('data-filter');
+            this.clearSiblingFilters(newFilter);
+            if(newFilter == "show-all") {
+                this.clearAllFilters();
+                this.setFilterVal([newFilter]);
+                console.log(this.filters);
+                this.applyFilters();
+                return;
+            }
+            this.filters.removeItem('show-all');
+            if($.inArray(newFilter, this.filters) !== -1) {
+                // if it's an already applied filter, need to remove it
+                this.filters.removeItem(newFilter);
+            } else {
+                // if it's not yet applied, need to add it
+                this.filters.push(newFilter)
+            }
+            this.setFilterVal(this.filters);
+            console.log(this.filters);
+            this.applyFilters();
+        },
+        clearSiblingFilters: function(filter) {
+            var target = $('#listings .filters button[data-filter="'+filter+'"]'),
+                siblings = target.closest('li').siblings().find('button'),
+                self = this;
+            console.log('Target: '+filter);
+            console.log('Siblings:');
+            siblings.each(function(index, sibling) {
+                console.log('    '+$(sibling).attr('data-filter'));
+                $(sibling).removeClass('button--black');
+                self.filters.removeItem($(sibling).attr('data-filter'));
+            });
+
+        },
+        clearAllFilters: function() {
+            this.filters = "";
+        },
+        setFilterVal: function(newVal) {
+            this.filters = newVal;
+        },
+        applyFilters: function() {
+            if(!this.filters.length || $.inArray('show-all', this.filters) !== -1) {
+                this.grid.isotope({filter: '' });
+            } else {
+                this.grid.isotope({ filter: '.' + this.filters.join('.') });
+            }
+        }
+
+    };
+
+    filtering = new Filtering();
 });

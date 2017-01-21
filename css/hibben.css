@@ -158,6 +158,16 @@ body {
       content: "";
       display: block;
       padding-top: 65%; }
+.listings .filters {
+  width: 80%;
+  max-width: 580px;
+  margin: 0 auto 14px;
+  text-align: left; }
+  .listings .filters .label {
+    color: black;
+    font-weight: 100;
+    width: 80px;
+    text-align: left; }
 
 .features__item_icon_circle,
 .button--blue {

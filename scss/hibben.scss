@@ -218,6 +218,19 @@ body {
             }
         }
     }
+
+    .filters {
+        width: 80%;
+        max-width: 580px;
+        margin: 0 auto 14px;
+        text-align: left;
+        .label {
+            color: black;
+            font-weight: 100;
+            width: 80px;
+            text-align: left;
+        }
+    }
 }
 
 .features__item_icon_circle,
