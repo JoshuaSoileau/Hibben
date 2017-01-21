@@ -10003,7 +10003,10 @@ font-size: 12px;}
   @media (max-width: 500px) {
     .works {
       padding: 50px 0 70px; } }
-
+.listings .works,
+.video .works {
+  padding-bottom: 0;
+}
 .works__row {
   position: relative;
   max-width: 1140px; }

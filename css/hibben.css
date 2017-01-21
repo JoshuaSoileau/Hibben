@@ -14,7 +14,8 @@ body {
     color: #82a7cc; }
 
 .hero {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .hero .cover:after {
     content: "";
     display: block;

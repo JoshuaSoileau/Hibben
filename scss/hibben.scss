@@ -35,6 +35,7 @@ body {
 
 .hero {
     position: relative;
+    overflow: hidden;
     .cover {
         &:after {
             content: "";
