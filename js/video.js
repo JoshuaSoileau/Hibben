@@ -2,25 +2,19 @@ var videos = [
     {
         thumbnail: "images/gallery/thumbnails/356/8.jpg",
         mp4: "videos/example.mp4",
-        ogg: "videos/example.ogg",
+        ogv: "videos/example.ogg",
         webm: "videos/example.webm"
     },
     {
         thumbnail: "images/gallery/thumbnails/351/10.jpg",
         mp4: "videos/example.mp4",
-        ogg: "videos/example.ogg",
+        ogv: "videos/example.ogg",
         webm: "videos/example.webm"
     },
     {
         thumbnail: "images/gallery/thumbnails/356/9.jpg",
         mp4: "videos/example.mp4",
-        ogg: "videos/example.ogg",
-        webm: "videos/example.webm"
-    },
-    {
-        thumbnail: "images/gallery/thumbnails/356/9.jpg",
-        mp4: "videos/example.mp4",
-        ogg: "videos/example.ogg",
+        ogv: "videos/example.ogg",
         webm: "videos/example.webm"
     }
 ];
@@ -41,9 +35,9 @@ jQuery(document).ready(function($) {
             '<div id="video-'+index+'" class="modal-container">' +
                 '<div class="list-modal video-content">' +
                     '<video autoplay="true" loop="false" muted="false" preload="auto">' +
-                        '<source src="videos/example.mp4" type="video/mp4">' +
-                        '<source src="videos/example.ogv" type="video/ogg">' +
-                        '<source src="videos/example.webm" type="video/webm">' +
+                        '<source src="#{mp4}" type="video/mp4">' +
+                        '<source src="#{ogv}" type="video/ogg">' +
+                        '<source src="#{webm}" type="video/webm">' +
                     '</video>' +
                 '</div>' +
             '</div>'
