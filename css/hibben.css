@@ -186,7 +186,7 @@ body {
 .contacts {
   background: #535f54; }
 
-.list-item .modal-container {
+.modal-container {
   animation: fade-in 500ms ease forwards;
   display: none;
   position: fixed;
@@ -196,9 +196,9 @@ body {
   top: 0;
   z-index: 100;
   background-color: rgba(36, 37, 38, 0.6); }
-  .list-item .modal-container.visible {
+  .modal-container.visible {
     display: block; }
-  .list-item .modal-container .list-modal {
+  .modal-container .list-modal {
     animation: slide-up 500ms ease forwards;
     position: absolute;
     top: 50%;
@@ -207,33 +207,36 @@ body {
     width: 80%;
     max-width: 1000px;
     background: white; }
-    .list-item .modal-container .list-modal p {
+    .modal-container .list-modal video {
+      width: 100%;
+      display: block; }
+    .modal-container .list-modal p {
       margin-bottom: 5px;
       padding: 0 10px 0 20px;
       text-align: left;
       font-size: 12px;
       font-weight: 100; }
       @media screen and (max-width: 768px) {
-        .list-item .modal-container .list-modal p {
+        .modal-container .list-modal p {
           margin: 0; } }
-      .list-item .modal-container .list-modal p:first-child {
+      .modal-container .list-modal p:first-child {
         padding-top: 15px; }
       @media screen and (max-width: 768px) {
-        .list-item .modal-container .list-modal p:last-of-type {
+        .modal-container .list-modal p:last-of-type {
           padding-bottom: 20px; } }
-      .list-item .modal-container .list-modal p strong {
+      .modal-container .list-modal p strong {
         margin-right: 14px; }
-      .list-item .modal-container .list-modal p.address {
+      .modal-container .list-modal p.address {
         font-size: 28px; }
         @media screen and (max-width: 768px) {
-          .list-item .modal-container .list-modal p.address {
+          .modal-container .list-modal p.address {
             font-size: 14px; } }
         @media screen and (max-width: 550px) {
-          .list-item .modal-container .list-modal p.address {
+          .modal-container .list-modal p.address {
             font-size: 18px;
             margin-bottom: 8px; } }
     @media screen and (max-width: 550px) {
-      .list-item .modal-container .list-modal .row ~ .row {
+      .modal-container .list-modal .row ~ .row {
         display: none; } }
 
 .row.no-gutters {

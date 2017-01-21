@@ -63,18 +63,5 @@ jQuery(function($) {
     };
 
     stickyLinks = new StickyLinks();
-
-
-    $('.video-link').click(function () {
-        var target = $(event.target).is('a') ? $(event.target) : $(event.target).closest('a'),
-            src = target.attr('data-video-src'),
-            modalEle = target.attr('href');
-        $(modalEle).modal('show');
-        $(modalEle + ' iframe').attr('src', src);
-    });
-
-    $('body').on('hidden.bs.modal', function () {
-        $('#video-1 iframe').removeAttr('src');
-    });
 });
 

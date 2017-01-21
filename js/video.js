@@ -33,13 +33,18 @@ jQuery(document).ready(function($) {
     var Ul = $('.gallery.video .works__row');
     videos.forEach(function(video, index) {
         templ = $.htmlTemplate('' +
-            '<a href="#video-'+index+'" data-target="" class="video-link works__item works__item--01" data-toggle="modal" >' +
+            '<a href="#video-'+index+'" class="video-link works__item works__item--01" >' +
                 '<div class="works__item_img works__item_img--01">' +
                     '<img src="#{thumbnail}" alt="">' +
                 '</div>' +
             '</a>' +
             '<div id="video-'+index+'" class="modal-container">' +
-                '<div class="list-modal">' +
+                '<div class="list-modal video-content">' +
+                    '<video autoplay="true" loop="false" muted="false" preload="auto">' +
+                        '<source src="videos/example.mp4" type="video/mp4">' +
+                        '<source src="videos/example.ogv" type="video/ogg">' +
+                        '<source src="videos/example.webm" type="video/webm">' +
+                    '</video>' +
                 '</div>' +
             '</div>'
         );
