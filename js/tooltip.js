@@ -133,7 +133,8 @@ jQuery(document).ready(function($) {
                 top: top,
                 left: left,
                 padding: "10px",
-                paddingBottom: 0
+                paddingBottom: 0,
+                height: "240px"
             })
         },
 

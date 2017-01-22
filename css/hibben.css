@@ -227,7 +227,6 @@ body {
       position: relative; } }
   .features__container--01 .features__content_wrapper--01 .map-tooltip {
     width: 200px;
-    height: 240px;
     background: #535f54;
     color: white;
     font-size: 10px;
