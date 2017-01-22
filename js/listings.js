@@ -193,10 +193,20 @@ jQuery(document).ready(function($) {
     var Ul = $('#listing-elements');
     listings.forEach(function(listing) {
         templ = $.htmlTemplate('' +
-            '<li class="list-item col-sm-3 col-xs-6 #{filters}" style="background-image: url(#{defaultImage});">' +
-                '<a href="#">' + 
-                    '<span class="address">#{address}</span>' +
-                '</a>' +
+            '<li class="list-item col-sm-3 col-xs-6 #{filters}">' +
+                '<div class="flip-container">' +
+                    '<div class="front" style="background-image: url(#{defaultImage});">' +
+                        '<a class="front" href="#">' +
+                            '<span class="address">#{address}</span>' +
+                        '</a>' +
+                    '</div>' +
+                    '<div class="back">' +
+                        '<p class="address">#{address}</p>' +
+                        '<p class="price"><strong class="title">Price:</strong>#{price}</p>' +
+                        '<p class="type"><strong class="title">Type:</strong>#{type}</p>' +
+                        '<p class="click-for-more">Click here for more info</p>' +
+                    '</div>' +
+            '   </div>' +
                 '<div class="modal-container">' +
                     '<div class="list-modal">' +
                         '<div class="row no-gutters">' +

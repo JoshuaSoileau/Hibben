@@ -103,16 +103,18 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-size: cover;
-  background-position: center center; }
-  .listings li.list-item > a {
+  perspective: 1000px;
+  transition: all 600ms ease; }
+  .listings li.list-item:hover .flip-container {
+    transform: rotateY(180deg); }
+  .listings li.list-item .flip-container:before {
+    content: "";
+    display: block;
+    padding-top: 75%; }
+  .listings li.list-item a {
     display: block;
     position: relative; }
-    .listings li.list-item > a:before {
-      content: "";
-      display: block;
-      padding-top: 75%; }
-    .listings li.list-item > a:after {
+    .listings li.list-item a:after {
       content: "";
       clear: none;
       display: block;
@@ -122,7 +124,7 @@ body {
       width: 100%;
       height: 100%;
       background: rgba(100, 100, 100, 0.5); }
-    .listings li.list-item > a .address {
+    .listings li.list-item a .address {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -137,9 +139,9 @@ body {
       font-size: 18px;
       font-weight: 100; }
       @media screen and (max-width: 768px) {
-        .listings li.list-item > a .address {
+        .listings li.list-item a .address {
           font-size: 14px; } }
-      .listings li.list-item > a .address:before {
+      .listings li.list-item a .address:before {
         content: "";
         display: block;
         margin: 0 auto 10px;
@@ -148,7 +150,7 @@ body {
         background: white;
         box-shadow: 1px 3px 0 black; }
         @media screen and (max-width: 768px) {
-          .listings li.list-item > a .address:before {
+          .listings li.list-item a .address:before {
             display: none; } }
   .listings li.list-item img {
     width: 100%; }
@@ -160,7 +162,7 @@ body {
       padding-top: 65%; }
 .listings .filters {
   width: 80%;
-  max-width: 580px;
+  max-width: 610px;
   margin: 0 auto 14px;
   text-align: left; }
   .listings .filters .label {
@@ -168,6 +170,35 @@ body {
     font-weight: 100;
     width: 80px;
     text-align: left; }
+.listings .front {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: all 600ms ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  transform: rotateY(0deg);
+  background-size: cover;
+  background-position: center center; }
+.listings .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  background: #3a4856;
+  color: white;
+  padding: 20px;
+  backface-visibility: hidden;
+  transition: all 600ms ease;
+  transform: rotateY(180deg);
+  z-index: 5; }
+  .listings .back p {
+    margin-bottom: 0px; }
 
 .features__item_icon_circle,
 .button--blue {
