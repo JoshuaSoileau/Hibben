@@ -50,7 +50,8 @@ body {
 .build {
   position: relative; }
   .build .about__line {
-    z-index: -1; }
+    z-index: -1;
+    height: 1.1px; }
 
 .header {
   transition: background 400ms ease; }
@@ -193,7 +194,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 100;
   background: #3a4856;
   color: white;
@@ -202,15 +203,15 @@ body {
   transition: all 600ms ease;
   transform: rotateY(180deg);
   z-index: 5; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .listings .back {
       font-size: 10px; } }
   .listings .back p {
     margin-bottom: 10px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1100px) {
       .listings .back p {
         margin-bottom: 0; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
       .listings .back p.title {
         font-size: 24px;
         margin-bottom: 18px; } }
@@ -323,22 +324,30 @@ body {
   background: #3a4856; }
 
 .features__container--01 {
-  position: relative; }
-  .features__container--01:before {
-    content: "Coming Soon";
-    color: white;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #3a4856;
-    z-index: 5;
-    opacity: .9;
-    text-align: center;
-    font-weight: 100;
-    font-size: 18px;
-    padding-top: 10%; }
+  position: relative;
+  border: 10px solid #3a4856;
+  border-left-width: 0;
+  border-right-width: 0; }
+  .features__container--01 svg {
+    width: 100%; }
+  .features__container--01 polygon {
+    opacity: 0;
+    transition: all 600ms ease;
+    transition-delay: 200ms; }
+  .features__container--01 text {
+    pointer-events: none;
+    cursor: pointer; }
+  .features__container--01 g[id*="Phase-"]:hover polygon {
+    opacity: 1; }
+  .features__container--01 g[id*="info."] {
+    cursor: pointer; }
+
+.features__box--01 {
+  background: #3a4856; }
+  .features__box--01:after {
+    border-left-color: #3a4856; }
+  .features__box--01 .features__item_text,
+  .features__box--01 .features__item_title {
+    color: #d0d0d0; }
 
 /*# sourceMappingURL=hibben.css.map */
