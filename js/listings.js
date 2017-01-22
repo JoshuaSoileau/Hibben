@@ -201,7 +201,7 @@ jQuery(document).ready(function($) {
                         '</a>' +
                     '</div>' +
                     '<div class="back">' +
-                        '<p class="address">#{address}</p>' +
+                        '<p class="title">#{address}</p>' +
                         '<p class="price"><strong class="title">Price:</strong>#{price}</p>' +
                         '<p class="type"><strong class="title">Type:</strong>#{type}</p>' +
                         '<p class="click-for-more">Click here for more info</p>' +
@@ -237,7 +237,7 @@ jQuery(document).ready(function($) {
         Ul.append(templ.evaluate(listing));
     });
 
-    $(document).on('click touchstart', 'li.list-item>a', function(event, ele) {
+    $(document).on('click touchstart', 'li.list-item .flip-container', function(event, ele) {
         var target = $(event.target).closest('li');
         event.preventDefault();
         target.find('.modal-container').addClass('visible');
