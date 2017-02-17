@@ -6,12 +6,6 @@ var videos = [
         webm: "videos/example.webm"
     },
     {
-        thumbnail: "images/gallery/thumbnails/351/10.jpg",
-        mp4: "videos/example.mp4",
-        ogv: "videos/example.ogg",
-        webm: "videos/example.webm"
-    },
-    {
         thumbnail: "images/gallery/thumbnails/356/9.jpg",
         mp4: "videos/example.mp4",
         ogv: "videos/example.ogg",
