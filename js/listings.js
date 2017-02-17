@@ -206,7 +206,7 @@ jQuery(document).ready(function($) {
                         '<p class="type"><strong class="title">Type:</strong>#{type}</p>' +
                         '<p class="click-for-more">Click here for more info</p>' +
                     '</div>' +
-            '   </div>' +
+                '</div>' +
                 '<div class="modal-container">' +
                     '<div class="list-modal">' +
                         '<div class="row no-gutters">' +
