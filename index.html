@@ -14,7 +14,6 @@
     <title>Hibben - A Front Porch Community</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hibben.css">
-    <!--<link rel="mask-icon" href="images/icon-gold.svg">-->
     <link rel="shortcut icon" type="image/png" href="images/icon-gold.png"/>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB9FQU7ORHXjjtNv4CM9onnUFkzyqfjaY" defer></script>
     <script src="js/main.js"></script>
@@ -106,12 +105,30 @@
                 <div class="features__item features__item--01">
                     <div class="features__item_icon_circle features__item_icon_circle--star-icon"></div>
                     <h3 class="features__item_title">Charleston Area Map</h3><span class="features__item_text features__item_text--01">Hibben is located just inside Belle Hall Plantation on Long Point Road, Mount Pleasant. To view a larger map of the Charleston area, <a
-                        href="#">click here</a>.</span>
+                        href="#" class="map-popup">click here</a>.</span>
                 </div>
                 <div class="features__item features__item--01">
                     <div class="features__item_icon_circle features__item_icon_circle--code-icon"></div>
                     <h3 class="features__item_title">Driving Directions</h3><span class="features__item_text features__item_text--01">To get to Hibben, turn west from Long Point Road onto the Belle Hall Parkway – the entrance is just across from the cafes, shopping and offices at Belle Hall Shopping Center.<a
-                        href="#">Click here</a> for directions using Google Maps.</span>
+                        href="https://www.google.com/maps/dir/My+location/652+Belle+Hall+Pkwy,+Mt+Pleasant,+SC+29464/data=!4m6!4m5!1m0!1m2!1m1!1s0x88fe6e2633f54805:0x27b218ef13f4e4af!3e0?sa=X&ved=0ahUKEwiw3pPh_pbSAhUo2oMKHZv7D78Qox0IJTAA">Click here</a> for directions using Google Maps.</span>
+                    <div id="map-modal" class="modal-container">
+                        <div class="list-modal video-content" style="max-width: 560px;">
+                            <img src="images/map-drawing.jpg" alt="">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        jQuery(function() {
+                            debugger;
+                            jQuery('a.map-popup').click(function(event) {
+                                event.preventDefault();
+                                debugger;
+                                $(this).parent().siblings('.modal-container').addClass('visible');
+                            });
+                            jQuery('#map-modal').click(function() {
+                                $(this).removeClass('visible');
+                            });
+                        })
+                    </script>
                 </div>
             </div>
             <div class="features__content_box--01">
@@ -460,20 +477,20 @@
     <div class="team team--02 build" id="build">
         <div class="about about--05">
             <div class="container">
-                <h2 class="team__title">Build</h2>
+                <h2 class="team__title">Hibben Build Process</h2>
             </div>
             <div class="about__process_box">
                 <button type="button" data-content-index="process_step_1" class="about__process_item about__process_item--star-icon state-active js-content-trigger">
                     <h3 class="about__process_title">Mortgage</h3>
                 </button>
                 <button type="button" data-content-index="process_step_2" class="about__process_item about__process_item--play-icon js-content-trigger">
-                    <h3 class="about__process_title">Lot Info</h3>
+                    <h3 class="about__process_title">Homesite</h3>
                 </button>
                 <button type="button" data-content-index="process_step_3" class="about__process_item about__process_item--trophy-icon js-content-trigger">
-                    <h3 class="about__process_title">Architect</h3>
+                    <h3 class="about__process_title">Design</h3>
                 </button>
                 <button type="button" data-content-index="process_step_4" class="about__process_item about__process_item--code-icon js-content-trigger">
-                    <h3 class="about__process_title">Builder</h3>
+                    <h3 class="about__process_title">Build</h3>
                 </button>
                 <!--decorative element-->
                 <div class="about__line"></div>
@@ -618,10 +635,10 @@
                             <h2 class="contacts__title contacts__title--03">Contacts</h2>
                             <div class="contacts__content--03">
                                 <div class="contacts__item contacts__item--03">
-                                    <h3 class="contacts__item_title">Office</h3><span class="contacts__item_text">Belle Hall Pkwy,<br> Mt Pleasant, SC 29464</span>
+                                    <h3 class="contacts__item_title">Office</h3><span class="contacts__item_text">652 Belle Hall Pkwy,<br> Mt Pleasant, SC 29464</span>
                                 </div>
                                 <div class="contacts__item contacts__item--03">
-                                    <h3 class="contacts__item_title">Phone number</h3><span class="contacts__item_text">+1 843 566 3430</span>
+                                    <h3 class="contacts__item_title">Phone number</h3><span class="contacts__item_text">843 566 3430</span>
                                 </div>
                             </div>
                             <div class="contacts__content--03">
@@ -657,9 +674,9 @@
                 </div>
                 <div class="footer__right_box--05"><span class="footer__social_text--05">Follow us:</span>
                     <ul class="social footer__social--05 footer__social_box">
-                        <li class="social__item social__item--left_margin"><a href="#" title="Say hello in Twitter!" class="social__link social__link--rounded social__link--twitter"></a></li>
-                        <li class="social__item social__item--left_margin"><a href="#" title="Say hello in Facebook!" class="social__link social__link--rounded social__link--facebook"></a></li>
-                        <li class="social__item social__item--left_margin"><a href="#" title="Say hello in G+!" class="social__link social__link--rounded social__link--g_plus"></a></li>
+                        <li class="social__item social__item--left_margin"><a href="https://twitter.com/HibbenHomes" title="Say hello in Twitter!" class="social__link social__link--rounded social__link--twitter"></a></li>
+                        <li class="social__item social__item--left_margin"><a href="https://www.facebook.com/bellehallplantation/" title="Say hello in Facebook!" class="social__link social__link--rounded social__link--facebook"></a></li>
+                        <li class="social__item social__item--left_margin"><a href="https://plus.google.com/u/1/102407573114050745937" title="Say hello in G+!" class="social__link social__link--rounded social__link--g_plus"></a></li>
                     </ul>
                 </div>
             </div>
