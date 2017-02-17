@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d88d975-4c67-48db-8ba7-1bc998512661" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/4828baa6d35618169aad5f6b1a27a190cb96a44a/hibben.scssc" afterPath="$PROJECT_DIR$/.sass-cache/4828baa6d35618169aad5f6b1a27a190cb96a44a/hibben.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/hibben.css" afterPath="$PROJECT_DIR$/css/hibben.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/hibben.css.map" afterPath="$PROJECT_DIR$/css/hibben.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/hibben.scss" afterPath="$PROJECT_DIR$/scss/hibben.scss" />
     </list>
     <ignored path="hibben.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +39,8 @@
       <file leaf-file-name="hibben.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/hibben.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="236" column="25" lean-forward="false" selection-start-line="236" selection-start-column="25" selection-end-line="236" selection-end-column="25" />
+            <state relative-caret-position="600">
+              <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -44,8 +49,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="523" column="95" lean-forward="false" selection-start-line="523" selection-start-column="95" selection-end-line="523" selection-end-column="95" />
+            <state relative-caret-position="484">
+              <caret line="689" column="67" lean-forward="false" selection-start-line="689" selection-start-column="67" selection-end-line="689" selection-end-column="67" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -62,8 +67,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="8775" column="34" lean-forward="false" selection-start-line="8775" selection-start-column="3" selection-end-line="8775" selection-end-column="34" />
+            <state relative-caret-position="406">
+              <caret line="8769" column="28" lean-forward="false" selection-start-line="8769" selection-start-column="28" selection-end-line="8769" selection-end-column="28" />
               <folding>
                 <element signature="e#476988#478695#1" expanded="true" />
               </folding>
@@ -75,7 +80,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>div</find>
       <find>modal-container</find>
       <find>function Lightbox(o</find>
       <find>js-filtering-button</find>
@@ -100,11 +104,12 @@
       <find>&lt;svg</find>
       <find>images/</find>
       <find>mortgage</find>
-      <find>610px</find>
       <find>map-pop</find>
       <find>play-icon</find>
       <find>about__process_item--magnifier-icon</find>
       <find>adam@</find>
+      <find>copyright</find>
+      <find>610px</find>
     </findStrings>
     <replaceStrings>
       <replace>href=&quot;http://www</replace>
@@ -141,8 +146,8 @@
         <option value="$PROJECT_DIR$/js/video.js" />
         <option value="$PROJECT_DIR$/js/tooltip.js" />
         <option value="$PROJECT_DIR$/js/listings.js" />
-        <option value="$PROJECT_DIR$/scss/hibben.scss" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/scss/hibben.scss" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -337,12 +342,12 @@
       <workItem from="1485019489355" duration="9048000" />
       <workItem from="1485094877718" duration="6533000" />
       <workItem from="1485460740270" duration="1368000" />
-      <workItem from="1487300055258" duration="4232000" />
+      <workItem from="1487300055258" duration="4694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79695000" />
+    <option name="totallyTimeSpent" value="80157000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -734,28 +739,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/hibben.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="236" column="25" lean-forward="false" selection-start-line="236" selection-start-column="25" selection-end-line="236" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="8775" column="34" lean-forward="false" selection-start-line="8775" selection-start-column="3" selection-end-line="8775" selection-end-column="34" />
+        <state relative-caret-position="406">
+          <caret line="8769" column="28" lean-forward="false" selection-start-line="8769" selection-start-column="28" selection-end-line="8769" selection-end-column="28" />
           <folding>
             <element signature="e#476988#478695#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scss/hibben.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="523" column="95" lean-forward="false" selection-start-line="523" selection-start-column="95" selection-end-line="523" selection-end-column="95" />
+        <state relative-caret-position="484">
+          <caret line="689" column="67" lean-forward="false" selection-start-line="689" selection-start-column="67" selection-end-line="689" selection-end-column="67" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#1;n#div#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />

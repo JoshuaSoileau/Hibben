@@ -5,6 +5,7 @@ $darkGreen: #535f54;
 $lightGreen: #a5bba7;
 $blue: #82a7cc;
 $darkBlue: #3a4856;
+$joshTag: #616365;
 
 @keyframes fade-in {
     0% {
@@ -30,6 +31,15 @@ body {
     h1, h2, h3, h4, h5, h6, .works__title {
         color: $blue;
 
+    }
+}
+
+.josh-tag {
+    float: right;
+    color: $joshTag;
+    a {
+        color: $joshTag;
+        text-decoration: underline;
     }
 }
 
