@@ -221,8 +221,7 @@ body {
       margin-right: 8px; }
 
 .features__container--01 {
-  position: relative;
-  overflow-y: hidden; }
+  position: relative; }
   @media screen and (max-width: 768px) {
     .features__container--01 .features__content_wrapper--01 {
       position: relative; } }
