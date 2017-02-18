@@ -58,7 +58,7 @@ body {
   position: relative; }
   .build .about__line {
     z-index: -1;
-    height: 1.1px; }
+    height: 1px; }
 
 .header {
   transition: background 400ms ease; }
