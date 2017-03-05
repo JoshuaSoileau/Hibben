@@ -1,15 +1,11 @@
 var videos = [
     {
         thumbnail: "images/gallery/thumbnails/356/8.jpg",
-        mp4: "videos/example.mp4",
-        ogv: "videos/example.ogg",
-        webm: "videos/example.webm"
+        mp4: "videos/1.mp4"
     },
     {
         thumbnail: "images/gallery/thumbnails/356/9.jpg",
-        mp4: "videos/example.mp4",
-        ogv: "videos/example.ogg",
-        webm: "videos/example.webm"
+        mp4: "videos/2.mp4"
     }
 ];
 
@@ -30,8 +26,6 @@ jQuery(document).ready(function($) {
                 '<div class="list-modal video-content">' +
                     '<video autoplay="true" loop="false" controls="true" muted="false" preload="auto">' +
                         '<source src="#{mp4}" type="video/mp4">' +
-                        '<source src="#{ogv}" type="video/ogg">' +
-                        '<source src="#{webm}" type="video/webm">' +
                     '</video>' +
                 '</div>' +
             '</div>'
