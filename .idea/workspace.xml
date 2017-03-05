@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d88d975-4c67-48db-8ba7-1bc998512661" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/video.js" afterPath="$PROJECT_DIR$/js/video.js" />
-    </list>
+    <list default="true" id="9d88d975-4c67-48db-8ba7-1bc998512661" name="Default" comment="" />
     <ignored path="hibben.dev.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -372,12 +370,12 @@
       <workItem from="1485460740270" duration="1368000" />
       <workItem from="1487300055258" duration="4910000" />
       <workItem from="1487364387099" duration="4704000" />
-      <workItem from="1488736490715" duration="3061000" />
+      <workItem from="1488736490715" duration="3245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88566000" />
+    <option name="totallyTimeSpent" value="88750000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
