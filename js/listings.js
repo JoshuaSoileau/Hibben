@@ -1,139 +1,19 @@
 var listings = [
     {
-        address: "376 Bridgetown Pass",
-        filters: "type-homesite price-100k-250k marsh-front-no",
+        address: "400 Bridgetown Pass",
+        filters: "type-homesite price-400k+ marsh-front-yes lot-size-02-03",
+        status: "available",
         type: "Homesite",
-        bedrooms: 4,
-        bathrooms: 2,
-        price: "$191,500",
-        sqft: "3,200 sqft",
+        price: "$419,000",
+        sqft: "9,641 sqft",
+        "lot-size": "0.22 acre",
+        "lot-number": 28,
+        "marsh-front": "yes",
         defaultImage: "images/listings/default.jpg",
         images: [
-            "images/listings/742-hibbens-grant-blvd.jpg",
-            "images/listings/716-stucco-lane.jpg",
-            "images/listings/521-country-place-road.jpg"
+            "images/listings/Pic2.jpg"
         ]
     },
-    {
-        address: "376 Bridgetown Pass",
-        filters: "type-homesite price-100k-250k marsh-front-no",
-        type: "Homesite",
-        bedrooms: 4,
-        bathrooms: 2,
-        price: "$191,500",
-        sqft: "3,200 sqft",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/742-hibbens-grant-blvd.jpg",
-            "images/listings/716-stucco-lane.jpg",
-            "images/listings/521-country-place-road.jpg"
-        ]
-    },
-    {
-        address: "376 Bridgetown Pass",
-        filters: "type-homesite price-100k-250k marsh-front-no",
-        type: "Homesite",
-        bedrooms: 4,
-        bathrooms: 2,
-        price: "$191,500",
-        sqft: "3,200 sqft",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/742-hibbens-grant-blvd.jpg",
-            "images/listings/716-stucco-lane.jpg",
-            "images/listings/521-country-place-road.jpg"
-        ]
-    },
-    {
-        address: "376 Bridgetown Pass",
-        filters: "type-homesite price-100k-250k marsh-front-no",
-        type: "Homesite",
-        bedrooms: 4,
-        bathrooms: 2,
-        price: "$191,500",
-        sqft: "3,200 sqft",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/742-hibbens-grant-blvd.jpg",
-            "images/listings/716-stucco-lane.jpg",
-            "images/listings/521-country-place-road.jpg"
-        ]
-    },
-    {
-        address: "376 Bridgetown Pass",
-        filters: "type-homesite price-100k-250k marsh-front-no",
-        type: "Homesite",
-        bedrooms: 4,
-        bathrooms: 2,
-        price: "$191,500",
-        sqft: "3,200 sqft",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/742-hibbens-grant-blvd.jpg",
-            "images/listings/716-stucco-lane.jpg",
-            "images/listings/521-country-place-road.jpg"
-        ]
-    },
-    {
-        address: "376 Bridgetown Pass",
-        filters: "type-homesite price-100k-250k marsh-front-no",
-        type: "Homesite",
-        bedrooms: 4,
-        bathrooms: 2,
-        price: "$191,500",
-        sqft: "3,200 sqft",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/742-hibbens-grant-blvd.jpg",
-            "images/listings/716-stucco-lane.jpg",
-            "images/listings/521-country-place-road.jpg"
-        ]
-    },
-    {
-        address: "376 Bridgetown Pass",
-        filters: "type-homesite price-100k-250k marsh-front-no",
-        type: "Homesite",
-        bedrooms: 4,
-        bathrooms: 2,
-        price: "$191,500",
-        sqft: "3,200 sqft",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/742-hibbens-grant-blvd.jpg",
-            "images/listings/716-stucco-lane.jpg",
-            "images/listings/521-country-place-road.jpg"
-        ]
-    },
-    {
-        address: "376 Bridgetown Pass",
-        filters: "type-homesite price-100k-250k marsh-front-no",
-        type: "Homesite",
-        bedrooms: 4,
-        bathrooms: 2,
-        price: "$191,500",
-        sqft: "3,200 sqft",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/742-hibbens-grant-blvd.jpg",
-            "images/listings/716-stucco-lane.jpg",
-            "images/listings/521-country-place-road.jpg"
-        ]
-    },
-    {
-        address: "376 Bridgetown Pass",
-        filters: "type-homesite price-100k-250k marsh-front-no",
-        type: "Homesite",
-        bedrooms: 4,
-        bathrooms: 2,
-        price: "$191,500",
-        sqft: "3,200 sqft",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/742-hibbens-grant-blvd.jpg",
-            "images/listings/716-stucco-lane.jpg",
-            "images/listings/521-country-place-road.jpg"
-        ]
-    }
 
 ];
 
@@ -168,18 +48,14 @@ jQuery(document).ready(function($) {
                                 '<img src="#{images[0]}" alt="">' +
                             '</div>' +
                             '<div class="col-sm-6">' +
+                                '<p class="lot-num">Lot ##{lot-number}</p>' +
                                 '<p class="address">#{address}</p>' +
+                                '<p class="status"><strong class="title">Status:</strong>#{status}</p>' +
                                 '<p class="price"><strong class="title">Price:</strong>#{price}</p>' +
                                 '<p class="sqft"><strong class="title">Sqft:</strong>#{sqft}</p>' +
                                 '<p class="lot-size"><strong class="title">Lot Size:</strong>#{lot-size}</p>' +
                                 '<p class="marsh-front"><strong class="title">Marsh Front:</strong>#{marsh-front}</p>' +
                                 '<p class="contact">For more information <a href="mailto:info@hibbenatbellehall.com?subject=Information%20Request%20for%20'+swapSpaces(listing.address)+'">click here</a> to email an agent today.</p>' +
-                            '</div>' +
-                        '</div>' +
-                        '<div class="row no-gutters">' +
-                            '<div class="col-sm-6 picture" style="background-image: url(#{images[1]})">' +
-                            '</div>' +
-                            '<div class="col-sm-6 picture" style="background-image: url(#{images[2]})">' +
                             '</div>' +
                         '</div>' +
                     '</div>' +
