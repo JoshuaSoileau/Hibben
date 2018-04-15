@@ -1,8 +1,8 @@
 var listings = [
     {
         address: "400 Bridgetown Pass",
-        filters: "type-homesite price-400k-plus marsh-front-yes lot-size-02-03 status-available",
-        status: "available",
+        filters: "type-homesite price-400k-plus marsh-front-yes lot-size-02-03 status-sold",
+        status: "sold",
         type: "Homesite",
         price: "$419,000",
         sqft: "9,641 sqft",
@@ -17,7 +17,7 @@ var listings = [
     {
         address: "396 Bridgetown Pass",
         "lot-number": 29,
-        price: "$375,000",
+        price: "$355,000",
         sqft: "8,429 sqft",
         "lot-size": "0.19 acre",
         "marsh-front": "yes",
@@ -44,36 +44,36 @@ var listings = [
             "images/listings/Pic2.jpg"
         ]
     },
-    {
-        address: "341 Bridgetown Pass",
-        "lot-number": 47,
-        price: "$182,000",
-        sqft: "8,284 sqft",
-        "lot-size": "0.12 acre",
-        "marsh-front": "no",
-        status: "sold",
-        filters: "type-homesite price-0-200k marsh-front-no lot-size-01-02 status-sold",
-        type: "Homesite",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/Pic2.jpg"
-        ]
-    },
-    {
-        address: "353 Bridgetown Pass",
-        "lot-number": 76,
-        price: "$225,000",
-        sqft: "6,300 sqft",
-        "lot-size": "0.15 acre",
-        "marsh-front": "no",
-        status: "sold",
-        filters: "type-homesite price-200k-300k marsh-front-no lot-size-01-02 status-sold",
-        type: "Homesite",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/Pic2.jpg"
-        ]
-    },
+    // {
+    //     address: "341 Bridgetown Pass",
+    //     "lot-number": 47,
+    //     price: "$182,000",
+    //     sqft: "8,284 sqft",
+    //     "lot-size": "0.12 acre",
+    //     "marsh-front": "no",
+    //     status: "sold",
+    //     filters: "type-homesite price-0-200k marsh-front-no lot-size-01-02 status-sold",
+    //     type: "Homesite",
+    //     defaultImage: "images/listings/default.jpg",
+    //     images: [
+    //         "images/listings/Pic2.jpg"
+    //     ]
+    // },
+    // {
+    //     address: "353 Bridgetown Pass",
+    //     "lot-number": 76,
+    //     price: "$225,000",
+    //     sqft: "6,300 sqft",
+    //     "lot-size": "0.15 acre",
+    //     "marsh-front": "no",
+    //     status: "sold",
+    //     filters: "type-homesite price-200k-300k marsh-front-no lot-size-01-02 status-sold",
+    //     type: "Homesite",
+    //     defaultImage: "images/listings/default.jpg",
+    //     images: [
+    //         "images/listings/Pic2.jpg"
+    //     ]
+    // },
     {
         address: "925 Tupelo Bay Drive",
         "lot-number": 11,
@@ -81,8 +81,8 @@ var listings = [
         sqft: "11,220 sqft",
         "lot-size": "0.26 acre",
         "marsh-front": "no",
-        status: "available",
-        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-available",
+        status: "sold",
+        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-sold",
         type: "Homesite",
         defaultImage: "images/listings/default.jpg",
         images: [
@@ -96,8 +96,8 @@ var listings = [
         sqft: "12,533 sqft",
         "lot-size": "0.29 acre",
         "marsh-front": "no",
-        status: "available",
-        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-available",
+        status: "sold",
+        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-sold",
         type: "Homesite",
         defaultImage: "images/listings/default.jpg",
         images: [
@@ -111,29 +111,29 @@ var listings = [
         sqft: "9,628 sqft",
         "lot-size": "0.22 acre",
         "marsh-front": "no",
-        status: "available",
-        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-available",
+        status: "Under Contract",
+        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-under-contract",
         type: "Homesite",
         defaultImage: "images/listings/default.jpg",
         images: [
             "images/listings/Pic2.jpg"
         ]
     },
-    {
-        address: "383 Bridgetown Pass",
-        "lot-number": 89,
-        price: "$210,000",
-        sqft: "7,873 sqft",
-        "lot-size": "0.18 acre",
-        "marsh-front": "no",
-        status: "sold",
-        filters: "type-homesite price-200k-300k marsh-front-no lot-size-01-02 status-sold",
-        type: "Homesite",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/Pic2.jpg"
-        ]
-    },
+    // {
+    //     address: "383 Bridgetown Pass",
+    //     "lot-number": 89,
+    //     price: "$210,000",
+    //     sqft: "7,873 sqft",
+    //     "lot-size": "0.18 acre",
+    //     "marsh-front": "no",
+    //     status: "sold",
+    //     filters: "type-homesite price-200k-300k marsh-front-no lot-size-01-02 status-sold",
+    //     type: "Homesite",
+    //     defaultImage: "images/listings/default.jpg",
+    //     images: [
+    //         "images/listings/Pic2.jpg"
+    //     ]
+    // },
     {
         address: "379 Bridgetown Pass",
         "lot-number": 90,
