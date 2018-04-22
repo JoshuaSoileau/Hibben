@@ -119,6 +119,171 @@ var listings = [
             "images/listings/Pic2.jpg"
         ]
     },
+    {
+        address: "929 Tupelo Bay Drive",
+        "lot-number": 12,
+        price: "$275,000",
+        sqft: "10,528 sqft",
+        "lot-size": "0.24 acre",
+        "marsh-front": "no",
+        status: "Available",
+        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-available",
+        type: "Homesite",
+        defaultImage: "images/listings/default.jpg",
+        images: [
+            "images/listings/Pic2.jpg"
+        ]
+    },
+    {
+        address: "933 Tupelo Bay Drive",
+        "lot-number": 13,
+        price: "$270,000",
+        sqft: "10,592 sqft",
+        "lot-size": "0.24 acre",
+        "marsh-front": "no",
+        status: "Available",
+        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-available",
+        type: "Homesite",
+        defaultImage: "images/listings/default.jpg",
+        images: [
+            "images/listings/Pic2.jpg"
+        ]
+    },
+    {
+        address: "937 Tupelo Bay Drive",
+        "lot-number": 14,
+        price: "$265,000",
+        sqft: "10,235 sqft",
+        "lot-size": "0.24 acre",
+        "marsh-front": "no",
+        status: "Available",
+        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-available",
+        type: "Homesite",
+        defaultImage: "images/listings/default.jpg",
+        images: [
+            "images/listings/Pic2.jpg"
+        ]
+    },
+    {
+        address: "941 Tupelo Bay Drive",
+        "lot-number": 15,
+        price: "$270,000",
+        sqft: "9,597 sqft",
+        "lot-size": "0.22 acre",
+        "marsh-front": "no",
+        status: "Available",
+        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-available",
+        type: "Homesite",
+        defaultImage: "images/listings/default.jpg",
+        images: [
+            "images/listings/Pic2.jpg"
+        ]
+    },
+    {
+        address: "945 Tupelo Bay Drive",
+        "lot-number": 21,
+        price: "$265,000",
+        sqft: "8,836 sqft",
+        "lot-size": "0.20 acre",
+        "marsh-front": "no",
+        status: "Available",
+        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-available",
+        type: "Homesite",
+        defaultImage: "images/listings/default.jpg",
+        images: [
+            "images/listings/Pic2.jpg"
+        ]
+    },
+    {
+        address: "942 Tupelo Bay Drive",
+        "lot-number": 88,
+        price: "$575,000",
+        sqft: "14,386 sqft",
+        "lot-size": "0.33 acre",
+        "marsh-front": "yes",
+        status: "Available",
+        filters: "type-homesite price-400k-plus marsh-front-yes lot-size-03-04 status-available",
+        type: "Homesite",
+        defaultImage: "images/listings/default.jpg",
+        images: [
+            "images/listings/Pic2.jpg"
+        ]
+    },
+    {
+        address: "938 Tupelo Bay Drive",
+        "lot-number": 23,
+        price: "$495,000",
+        sqft: "13,507 sqft",
+        "lot-size": "0.31 acre",
+        "marsh-front": "yes",
+        status: "Available",
+        filters: "type-homesite price-400k-plus marsh-front-yes lot-size-03-04 status-available",
+        type: "Homesite",
+        defaultImage: "images/listings/default.jpg",
+        images: [
+            "images/listings/Pic2.jpg"
+        ]
+    },
+    {
+        address: "936 Tupelo Bay Drive",
+        "lot-number": 24,
+        price: "$475,000",
+        sqft: "12,777 sqft",
+        "lot-size": "0.29 acre",
+        "marsh-front": "yes",
+        status: "Available",
+        filters: "type-homesite price-400k-plus marsh-front-yes lot-size-02-03 status-available",
+        type: "Homesite",
+        defaultImage: "images/listings/default.jpg",
+        images: [
+            "images/listings/Pic2.jpg"
+        ]
+    },
+    {
+        address: "934 Tupelo Bay Drive",
+        "lot-number": 25,
+        price: "$475,000",
+        sqft: "12,098 sqft",
+        "lot-size": "0.28 acre",
+        "marsh-front": "yes",
+        status: "Available",
+        filters: "type-homesite price-400k-plus marsh-front-yes lot-size-02-03 status-available",
+        type: "Homesite",
+        defaultImage: "images/listings/default.jpg",
+        images: [
+            "images/listings/Pic2.jpg"
+        ]
+    },
+    {
+        address: "930 Tupelo Bay Drive",
+        "lot-number": 26,
+        price: "$395,000",
+        sqft: "11,400 sqft",
+        "lot-size": "0.26 acre",
+        "marsh-front": "yes",
+        status: "Available",
+        filters: "type-homesite price-300k-400k marsh-front-yes lot-size-02-03 status-available",
+        type: "Homesite",
+        defaultImage: "images/listings/default.jpg",
+        images: [
+            "images/listings/Pic2.jpg"
+        ]
+    },
+    {
+        address: "926 Tupelo Bay Drive",
+        "lot-number": 27,
+        price: "$285,000",
+        sqft: "8,400 sqft",
+        "lot-size": "0.19 acre",
+        "marsh-front": "yes",
+        status: "Under Contract",
+        filters: "type-homesite price-200k-300k marsh-front-yes lot-size-01-02 status-under-contract",
+        type: "Homesite",
+        defaultImage: "images/listings/default.jpg",
+        images: [
+            "images/listings/Pic2.jpg"
+        ]
+    },
     // {
     //     address: "383 Bridgetown Pass",
     //     "lot-number": 89,
