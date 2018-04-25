@@ -36,8 +36,8 @@ var listings = [
         sqft: "5,325 sqft",
         "lot-size": "0.12 acre",
         "marsh-front": "yes",
-        status: "available",
-        filters: "type-homesite price-200k-300k marsh-front-yes lot-size-01-02 status-available",
+        status: "Under Contract",
+        filters: "type-homesite price-200k-300k marsh-front-yes lot-size-01-02 status-under-contract",
         type: "Homesite",
         defaultImage: "images/listings/default.jpg",
         images: [
@@ -126,8 +126,8 @@ var listings = [
         sqft: "10,528 sqft",
         "lot-size": "0.24 acre",
         "marsh-front": "no",
-        status: "Available",
-        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-available",
+        status: "Under Contract",
+        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-under-contract",
         type: "Homesite",
         defaultImage: "images/listings/default.jpg",
         images: [
@@ -156,8 +156,8 @@ var listings = [
         sqft: "10,235 sqft",
         "lot-size": "0.24 acre",
         "marsh-front": "no",
-        status: "Available",
-        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-available",
+        status: "Under Contract",
+        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-under-contract",
         type: "Homesite",
         defaultImage: "images/listings/default.jpg",
         images: [
@@ -231,8 +231,8 @@ var listings = [
         sqft: "12,777 sqft",
         "lot-size": "0.29 acre",
         "marsh-front": "yes",
-        status: "Available",
-        filters: "type-homesite price-400k-plus marsh-front-yes lot-size-02-03 status-available",
+        status: "Under Contract",
+        filters: "type-homesite price-400k-plus marsh-front-yes lot-size-02-03 status-under-contract",
         type: "Homesite",
         defaultImage: "images/listings/default.jpg",
         images: [
@@ -317,7 +317,7 @@ var listings = [
     {
         address: "375 Bridgetown Pass",
         "lot-number": 97,
-        price: "$250,000",
+        price: "$235,000",
         sqft: "10,204 sqft",
         "lot-size": "0.23 acre",
         "marsh-front": "no",
