@@ -1,19 +1,19 @@
 var listings = [
-    {
-        address: "400 Bridgetown Pass",
-        filters: "type-homesite price-400k-plus marsh-front-yes lot-size-02-03 status-sold",
-        status: "sold",
-        type: "Homesite",
-        price: "$419,000",
-        sqft: "9,641 sqft",
-        "lot-size": "0.22 acre",
-        "lot-number": 28,
-        "marsh-front": "yes",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/Pic2.jpg"
-        ]
-    },
+    // {
+    //     address: "400 Bridgetown Pass",
+    //     filters: "type-homesite price-400k-plus marsh-front-yes lot-size-02-03 status-sold",
+    //     status: "sold",
+    //     type: "Homesite",
+    //     price: "$419,000",
+    //     sqft: "9,641 sqft",
+    //     "lot-size": "0.22 acre",
+    //     "lot-number": 28,
+    //     "marsh-front": "yes",
+    //     defaultImage: "images/listings/default.jpg",
+    //     images: [
+    //         "images/listings/Pic2.jpg"
+    //     ]
+    // },
     {
         address: "396 Bridgetown Pass",
         "lot-number": 29,
@@ -74,45 +74,45 @@ var listings = [
     //         "images/listings/Pic2.jpg"
     //     ]
     // },
-    {
-        address: "925 Tupelo Bay Drive",
-        "lot-number": 11,
-        price: "$265,000",
-        sqft: "11,220 sqft",
-        "lot-size": "0.26 acre",
-        "marsh-front": "no",
-        status: "sold",
-        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-sold",
-        type: "Homesite",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/Pic2.jpg"
-        ]
-    },
-    {
-        address: "921 Tupelo Bay Drive",
-        "lot-number": 10,
-        price: "$260,000",
-        sqft: "12,533 sqft",
-        "lot-size": "0.29 acre",
-        "marsh-front": "no",
-        status: "sold",
-        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-sold",
-        type: "Homesite",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/Pic2.jpg"
-        ]
-    },
+    // {
+    //     address: "925 Tupelo Bay Drive",
+    //     "lot-number": 11,
+    //     price: "$265,000",
+    //     sqft: "11,220 sqft",
+    //     "lot-size": "0.26 acre",
+    //     "marsh-front": "no",
+    //     status: "sold",
+    //     filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-sold",
+    //     type: "Homesite",
+    //     defaultImage: "images/listings/default.jpg",
+    //     images: [
+    //         "images/listings/Pic2.jpg"
+    //     ]
+    // },
+    // {
+    //     address: "921 Tupelo Bay Drive",
+    //     "lot-number": 10,
+    //     price: "$260,000",
+    //     sqft: "12,533 sqft",
+    //     "lot-size": "0.29 acre",
+    //     "marsh-front": "no",
+    //     status: "sold",
+    //     filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-sold",
+    //     type: "Homesite",
+    //     defaultImage: "images/listings/default.jpg",
+    //     images: [
+    //         "images/listings/Pic2.jpg"
+    //     ]
+    // },
     {
         address: "922 Tupelo Bay Drive",
         "lot-number": 88,
-        price: "$210,000",
+        price: "$575,000",
         sqft: "9,628 sqft",
         "lot-size": "0.22 acre",
         "marsh-front": "no",
         status: "Under Contract",
-        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-under-contract",
+        filters: "type-homesite price-400k-plus marsh-front-no lot-size-02-03 status-under-contract",
         type: "Homesite",
         defaultImage: "images/listings/default.jpg",
         images: [
@@ -122,7 +122,7 @@ var listings = [
     {
         address: "929 Tupelo Bay Drive",
         "lot-number": 12,
-        price: "$275,000",
+        price: "",
         sqft: "10,528 sqft",
         "lot-size": "0.24 acre",
         "marsh-front": "no",
@@ -137,12 +137,12 @@ var listings = [
     {
         address: "933 Tupelo Bay Drive",
         "lot-number": 13,
-        price: "$270,000",
+        price: "",
         sqft: "10,592 sqft",
         "lot-size": "0.24 acre",
         "marsh-front": "no",
-        status: "Available",
-        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-available",
+        status: "Under Contract",
+        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-under-contract",
         type: "Homesite",
         defaultImage: "images/listings/default.jpg",
         images: [
@@ -152,7 +152,7 @@ var listings = [
     {
         address: "937 Tupelo Bay Drive",
         "lot-number": 14,
-        price: "$265,000",
+        price: "",
         sqft: "10,235 sqft",
         "lot-size": "0.24 acre",
         "marsh-front": "no",
@@ -212,12 +212,12 @@ var listings = [
     {
         address: "938 Tupelo Bay Drive",
         "lot-number": 23,
-        price: "$495,000",
+        price: "",
         sqft: "13,507 sqft",
         "lot-size": "0.31 acre",
         "marsh-front": "yes",
-        status: "Available",
-        filters: "type-homesite price-400k-plus marsh-front-yes lot-size-03-04 status-available",
+        status: "Under Contract",
+        filters: "type-homesite price-400k-plus marsh-front-yes lot-size-03-04 status-under-contract",
         type: "Homesite",
         defaultImage: "images/listings/default.jpg",
         images: [
@@ -272,7 +272,7 @@ var listings = [
     {
         address: "926 Tupelo Bay Drive",
         "lot-number": 27,
-        price: "$285,000",
+        price: "",
         sqft: "8,400 sqft",
         "lot-size": "0.19 acre",
         "marsh-front": "yes",
@@ -299,21 +299,21 @@ var listings = [
     //         "images/listings/Pic2.jpg"
     //     ]
     // },
-    {
-        address: "379 Bridgetown Pass",
-        "lot-number": 90,
-        price: "$260,000",
-        sqft: "9,635 sqft",
-        "lot-size": "0.22 acre",
-        "marsh-front": "no",
-        status: "sold",
-        filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-sold",
-        type: "Homesite",
-        defaultImage: "images/listings/default.jpg",
-        images: [
-            "images/listings/Pic2.jpg"
-        ]
-    },
+    // {
+    //     address: "379 Bridgetown Pass",
+    //     "lot-number": 90,
+    //     price: "$260,000",
+    //     sqft: "9,635 sqft",
+    //     "lot-size": "0.22 acre",
+    //     "marsh-front": "no",
+    //     status: "sold",
+    //     filters: "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-sold",
+    //     type: "Homesite",
+    //     defaultImage: "images/listings/default.jpg",
+    //     images: [
+    //         "images/listings/Pic2.jpg"
+    //     ]
+    // },
     {
         address: "375 Bridgetown Pass",
         "lot-number": 97,
@@ -332,12 +332,12 @@ var listings = [
     {
         address: "373 Bridgetown Pass",
         "lot-number": 91,
-        price: "$215,000",
+        price: "",
         sqft: "8,280 sqft",
         "lot-size": "0.19 acre",
         "marsh-front": "no",
-        status: "sold",
-        filters: "type-homesite price-200k-300k marsh-front-no lot-size-01-02 status-sold",
+        status: "Under Contract",
+        filters: "type-homesite price-200k-300k marsh-front-no lot-size-01-02 status-under-contract",
         type: "Homesite",
         defaultImage: "images/listings/default.jpg",
         images: [
