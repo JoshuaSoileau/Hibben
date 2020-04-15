@@ -9,7 +9,7 @@ var videos = [
   },
   {
     thumbnail: "images/gallery/thumbnails/356/10.jpg",
-    iframe: "https://www.youtube.com/embed/URuU9bImrII?autoplay=1",
+    iframe: "https://www.youtube.com/embed/URuU9bImrII",
   },
 ];
 
