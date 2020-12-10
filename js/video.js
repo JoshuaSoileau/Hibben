@@ -13,6 +13,13 @@ var videos = [
   },
 ];
 
+var phase6Videos = [
+  {
+    thumbnail: "images/gallery/thumbnails/356/9.jpg",
+    iframe: "https://www.youtube.com/embed/9grp395RNPQ",
+  },
+];
+
 ///
 // Do not edit below this
 ///
@@ -42,17 +49,42 @@ jQuery(document).ready(function ($) {
     Ul.append(templ.evaluate(video));
   });
 
-  $(document).on("click touchstart", ".gallery.video a.video-link", function (
-    event,
-    ele
-  ) {
-    var target = $(event.target).is(".video-link")
-      ? $(event.target)
-      : $(event.target).closest(".video-link");
-    modal = target.attr("href");
-    event.preventDefault();
-    $(modal).addClass("visible");
+  phase6Videos.forEach(function (video, index) {
+    const videoElement = video.iframe
+      ? '<iframe width="1000" height="562" src="#{iframe}" frameborder="0" allowfullscreen style="display: block;" ></iframe>'
+      : '<video autoplay="true" loop="false" controls="true" muted="false" preload="auto"><source src="#{mp4}" type="video/mp4"></video>';
+
+    templ = $.htmlTemplate(
+      "" +
+        '<a href="#video-' +
+        index +
+        '" class="video-link works__item works__item--01" style="width:100%;">' +
+        '<div class="works__item_img works__item_img--01"><img src="#{thumbnail}" alt=""></div>' +
+        "</a>" +
+        '<div id="video-' +
+        index +
+        '" class="modal-container">' +
+        '<div class="list-modal video-content">' +
+        videoElement +
+        "</div>" +
+        "</div>"
+    );
+
+    $(".gallery.video .works__row--phase-6").append(templ.evaluate(video));
   });
+
+  $(document).on(
+    "click touchstart",
+    ".gallery.video a.video-link",
+    function (event, ele) {
+      var target = $(event.target).is(".video-link")
+        ? $(event.target)
+        : $(event.target).closest(".video-link");
+      modal = target.attr("href");
+      event.preventDefault();
+      $(modal).addClass("visible");
+    }
+  );
 
   $(document).on(
     "click touchstart",
