@@ -13,62 +13,62 @@ var listings = [
     defaultImage: "images/listings/default.jpg",
     images: ["images/listings/Pic2.jpg"],
   },
-  {
-    address: "Lot 26",
-    filters:
-      "type-homesite price-300k-400k marsh-front-yes lot-size-02-03 status-available",
-    status: "available",
-    type: "Homesite",
-    price: "$395,000",
-    sqft: "-",
-    "lot-size": "0.23 acre",
-    "lot-number": 26,
-    "marsh-front": "yes",
-    defaultImage: "images/listings/default.jpg",
-    images: ["images/listings/Pic2.jpg"],
-  },
-  {
-    address: "Lot 25",
-    filters:
-      "type-homesite price-400k-plus marsh-front-yes lot-size-03-04 status-available",
-    status: "available",
-    type: "Homesite",
-    price: "$475,000",
-    sqft: "-",
-    "lot-size": "0.36 acre",
-    "lot-number": 25,
-    "marsh-front": "yes",
-    defaultImage: "images/listings/default.jpg",
-    images: ["images/listings/Pic2.jpg"],
-  },
-  {
-    address: "Lot 24",
-    filters:
-      "type-homesite price-400k-plus marsh-front-yes lot-size-03-04 status-available",
-    status: "available",
-    type: "Homesite",
-    price: "$475,000",
-    sqft: "-",
-    "lot-size": "0.36 acre",
-    "lot-number": 24,
-    "marsh-front": "yes",
-    defaultImage: "images/listings/default.jpg",
-    images: ["images/listings/Pic2.jpg"],
-  },
-  {
-    address: "Lot 23",
-    filters:
-      "type-homesite price-400k-plus marsh-front-yes lot-size-02-03 status-available",
-    status: "available",
-    type: "Homesite",
-    price: "$495,000",
-    sqft: "-",
-    "lot-size": "0.26 acre",
-    "lot-number": 23,
-    "marsh-front": "yes",
-    defaultImage: "images/listings/default.jpg",
-    images: ["images/listings/Pic2.jpg"],
-  },
+  // {
+  //   address: "Lot 26",
+  //   filters:
+  //     "type-homesite price-300k-400k marsh-front-yes lot-size-02-03 status-available",
+  //   status: "available",
+  //   type: "Homesite",
+  //   price: "$395,000",
+  //   sqft: "-",
+  //   "lot-size": "0.23 acre",
+  //   "lot-number": 26,
+  //   "marsh-front": "yes",
+  //   defaultImage: "images/listings/default.jpg",
+  //   images: ["images/listings/Pic2.jpg"],
+  // },
+  // {
+  //   address: "Lot 25",
+  //   filters:
+  //     "type-homesite price-400k-plus marsh-front-yes lot-size-03-04 status-available",
+  //   status: "available",
+  //   type: "Homesite",
+  //   price: "$475,000",
+  //   sqft: "-",
+  //   "lot-size": "0.36 acre",
+  //   "lot-number": 25,
+  //   "marsh-front": "yes",
+  //   defaultImage: "images/listings/default.jpg",
+  //   images: ["images/listings/Pic2.jpg"],
+  // },
+  // {
+  //   address: "Lot 24",
+  //   filters:
+  //     "type-homesite price-400k-plus marsh-front-yes lot-size-03-04 status-available",
+  //   status: "available",
+  //   type: "Homesite",
+  //   price: "$475,000",
+  //   sqft: "-",
+  //   "lot-size": "0.36 acre",
+  //   "lot-number": 24,
+  //   "marsh-front": "yes",
+  //   defaultImage: "images/listings/default.jpg",
+  //   images: ["images/listings/Pic2.jpg"],
+  // },
+  // {
+  //   address: "Lot 23",
+  //   filters:
+  //     "type-homesite price-400k-plus marsh-front-yes lot-size-02-03 status-available",
+  //   status: "available",
+  //   type: "Homesite",
+  //   price: "$495,000",
+  //   sqft: "-",
+  //   "lot-size": "0.26 acre",
+  //   "lot-number": 23,
+  //   "marsh-front": "yes",
+  //   defaultImage: "images/listings/default.jpg",
+  //   images: ["images/listings/Pic2.jpg"],
+  // },
   // {
   //     address: "396 Bridgetown Pass",
   //     "lot-number": 29,
@@ -452,23 +452,25 @@ jQuery(document).ready(function ($) {
     Ul.append(templ.evaluate(listing));
   });
 
-  $(document).on("click touchstart", "li.list-item .flip-container", function (
-    event,
-    ele
-  ) {
-    var target = $(event.target).closest("li");
-    event.preventDefault();
-    target.find(".modal-container").addClass("visible");
-  });
+  $(document).on(
+    "click touchstart",
+    "li.list-item .flip-container",
+    function (event, ele) {
+      var target = $(event.target).closest("li");
+      event.preventDefault();
+      target.find(".modal-container").addClass("visible");
+    }
+  );
 
-  $(document).on("click touchstart", "li.list-item .modal-container", function (
-    event,
-    ele
-  ) {
-    event.preventDefault();
-    if (!$(event.target).is(".modal-container")) return;
-    $(event.target).removeClass("visible");
-  });
+  $(document).on(
+    "click touchstart",
+    "li.list-item .modal-container",
+    function (event, ele) {
+      event.preventDefault();
+      if (!$(event.target).is(".modal-container")) return;
+      $(event.target).removeClass("visible");
+    }
+  );
 
   Array.prototype.removeItem = function (v) {
     this.splice(this.indexOf(v) == -1 ? this.length : this.indexOf(v), 1);
