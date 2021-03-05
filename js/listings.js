@@ -1,18 +1,18 @@
 var listings = [
-  {
-    address: "Lot 15",
-    filters:
-      "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-available",
-    status: "available",
-    type: "Homesite",
-    price: "$270,000",
-    sqft: "-",
-    "lot-size": "0.20 acre",
-    "lot-number": 15,
-    "marsh-front": "yes",
-    defaultImage: "images/listings/default.jpg",
-    images: ["images/listings/Pic2.jpg"],
-  },
+//   {
+//     address: "Lot 15",
+//     filters:
+//       "type-homesite price-200k-300k marsh-front-no lot-size-02-03 status-available",
+//     status: "available",
+//     type: "Homesite",
+//     price: "$270,000",
+//     sqft: "-",
+//     "lot-size": "0.20 acre",
+//     "lot-number": 15,
+//     "marsh-front": "yes",
+//     defaultImage: "images/listings/default.jpg",
+//     images: ["images/listings/Pic2.jpg"],
+//   },
   // {
   //   address: "Lot 26",
   //   filters:
